@@ -4,6 +4,8 @@ import Brands from '../Brands/Brands';
 import DetailCount from '../DetailCount/DetailCount';
 import Service from '../Service/Service';
 import Reviews from '../Reviews/Reviews';
+import BrainsBehind from '../BrainsBehind/BrainsBehind';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
     return (
@@ -14,6 +16,8 @@ const Home = () => {
                 <DetailCount></DetailCount>
                 <Service></Service>
                 <Reviews></Reviews>
+                <BrainsBehind></BrainsBehind>
+                <Contact></Contact>
             </div>
         </div>
     );
