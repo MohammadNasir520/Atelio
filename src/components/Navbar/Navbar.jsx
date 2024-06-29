@@ -79,7 +79,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="sticky inset-0 z-50 bg-transparent  lg:w-4/6 mx-auto text-white ">
+        <div className="sticky inset-0 z-50 bg-transparent  lg:w-4/6 mx-auto text-black  ">
             <div className="">
                 <nav className="relative px-4 py-1 flex justify-between items-center ">
                     <div className="flex space-x-5">
@@ -115,7 +115,7 @@ const Navbar = () => {
                     className={`navbar-menu relative z-50  ${isMenuOpen ? '' : 'hidden'}`}
                 >
                     <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-                    <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto ">
+                    <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto ">
                         <div className="flex items-center mb-8">
                             <NavLink
                                 className="mr-auto text-3xl font-bold leading-none"
@@ -129,7 +129,7 @@ const Navbar = () => {
                             >
                                 <title>close menu</title>
                                 <svg
-                                    className="h-6 w-6 text-inherit cursor-pointer hover:text-gray-500"
+                                    className="h-6 w-6 text-inherit cursor-pointer hover:text-gray-500 text-white"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"

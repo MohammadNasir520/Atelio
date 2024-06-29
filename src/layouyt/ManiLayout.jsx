@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer';
 
 const ManiLayout = () => {
     return (
-        <div>
+        <div className=''>
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
