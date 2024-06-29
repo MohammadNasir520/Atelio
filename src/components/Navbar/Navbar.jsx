@@ -109,7 +109,7 @@ const Navbar = () => {
                     <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
                         {navItems}
                     </ul>
-                    <div className="hidden lg:block border rounded-3xl px-2 border-green-600 border-b-4 cursor-pointer border-t-2"><span className='flex items-center justify-center text-sm '>whatsApp <FiPhoneCall className="w-4 h-4  border  rounded-full ml-1 " /></span> </div>
+                    <div className="hidden lg:block border rounded-3xl px-2 border-green-600 border-b-4 cursor-pointer border-t-2"><span className='flex items-center justify-center text-sm text-white'>whatsApp <FiPhoneCall className="w-4 h-4  border  rounded-full ml-1 " /></span> </div>
                 </nav>
                 <div
                     className={`navbar-menu relative z-50  ${isMenuOpen ? '' : 'hidden'}`}
