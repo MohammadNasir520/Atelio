@@ -55,7 +55,7 @@ const Navbar = () => {
                             to={item?.to}
                             className={({ isActive }) =>
                                 ` ${isActive
-                                    ? 'text-blue-700  p-4'
+                                    ? 'text-green-700  p-4 font-bold'
                                     : `${isMenuOpen
                                         ? 'block p-4  text-xs   text-white '
                                         : 'text-sm text-white  '
@@ -85,7 +85,7 @@ const Navbar = () => {
                     <div className="flex space-x-5">
 
                         <NavLink className="text-3xl font-bold leading-none " to={''}>
-                            <h4 className="mb-2 block  font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            <h4 className="mb-2 block text-white  font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                                 Atlio
                             </h4>
                         </NavLink>
@@ -95,7 +95,7 @@ const Navbar = () => {
                         onClick={() => setMenuOpen(!isMenuOpen)}
                         className={`${isMenuOpen ? 'hidden' : 'block'}  lg:hidden`}
                     >
-                        <button className="navbar-burger flex items-center text-blue-600 p-3">
+                        <button className="navbar-burger flex items-center text-white p-3">
                             <svg
                                 className="block h-4 w-4 fill-current"
                                 viewBox="0 0 20 20"
