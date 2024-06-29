@@ -57,8 +57,8 @@ const Navbar = () => {
                                 ` ${isActive
                                     ? 'text-blue-700  p-4'
                                     : `${isMenuOpen
-                                        ? 'block p-4  text-xs    '
-                                        : 'text-sm  '
+                                        ? 'block p-4  text-xs   text-white '
+                                        : 'text-sm text-white  '
                                     }  `
                                 } ${NavFont}`
                             }
@@ -77,52 +77,15 @@ const Navbar = () => {
         </>
     );
 
-    // constwhatsApp= (
-    //     <div className=" lg:flex">
-    //         {user ? (
-    //             <div
-    //                 onClick={handleSignout}
-    //                 className={`${isMenuOpen
-    //                     ? 'block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl'
-    //                     : 'hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200 '
-    //                     }`}
-    //             >
-    //                 SignOut
-    //             </div>
-    //         ) : (
-    //             <>
-    //                 <NavLink
-    //                     to={'/signin'}
-    //                     className={`${isMenuOpen
-    //                         ? 'block px-4 py-3 mb-3  text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl'
-    //                         : 'hidden  lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200 '
-    //                         }`}
-    //                 >
-    //                     Sign In
-    //                 </NavLink>
-    //                 <NavLink
-    //                     to={'/signup'}
-    //                     className={`${isMenuOpen
-    //                         ? 'block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl'
-    //                         : 'hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200 '
-    //                         }`}
-    //                 >
-    //                     SignUp
-    //                 </NavLink>
-    //             </>
-    //         )}
-
-    //     </div>
-    // );
 
     return (
-        <div className="sticky inset-0 z-50 mt-7 bg-transparent lg:w-4/6 mx-auto">
+        <div className="sticky inset-0 z-50 bg-transparent  lg:w-4/6 mx-auto text-white ">
             <div className="">
-                <nav className="relative px-4 py-4 flex justify-between items-center ">
+                <nav className="relative px-4 py-1 flex justify-between items-center ">
                     <div className="flex space-x-5">
 
                         <NavLink className="text-3xl font-bold leading-none " to={''}>
-                            <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            <h4 className="mb-2 block  font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                                 Atlio
                             </h4>
                         </NavLink>
@@ -146,7 +109,7 @@ const Navbar = () => {
                     <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
                         {navItems}
                     </ul>
-                    <div className="hidden lg:block border rounded-3xl px-2 border-green-600 border-b-4 border-t-2"><span className='flex items-center justify-center text-sm '>whatsApp <FiPhoneCall className="w-4 h-4  border  rounded-full ml-1 " /></span> </div>
+                    <div className="hidden lg:block border rounded-3xl px-2 border-green-600 border-b-4 cursor-pointer border-t-2"><span className='flex items-center justify-center text-sm '>whatsApp <FiPhoneCall className="w-4 h-4  border  rounded-full ml-1 " /></span> </div>
                 </nav>
                 <div
                     className={`navbar-menu relative z-50  ${isMenuOpen ? '' : 'hidden'}`}
