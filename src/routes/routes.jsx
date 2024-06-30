@@ -3,6 +3,7 @@ import App from "../App";
 import Home from "../components/HomePage/Home";
 import ContactPage from "../pages/contact/ContactPage";
 import TeamPage from "../pages/team/TeamPage";
+import ServicePage from "../pages/service/ServicePage";
 
 export const router = createBrowserRouter([
     {
@@ -22,6 +23,11 @@ export const router = createBrowserRouter([
             {
                 path: "/team",
                 element: <TeamPage></TeamPage>
+
+            },
+            {
+                path: "/service",
+                element: <ServicePage></ServicePage>
 
             },
         ]

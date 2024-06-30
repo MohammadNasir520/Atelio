@@ -86,7 +86,7 @@ const ContactForm = () => {
                 </div>
 
                 <div className='flex justify-center my-10'>
-                    <Button type="submit">Send Query</Button>
+                    <Button bgColor={"bg-green-600"} type="submit">Send Query</Button>
                 </div>
             </form >
         </div>
