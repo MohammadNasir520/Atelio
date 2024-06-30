@@ -22,10 +22,10 @@ const Reviews = () => {
     return (
 
         <div
-            className='lg:pt-10'
-            style={{ backgroundImage: 'url(/images/bgImg.png)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', objectFit: "cover" }}
+            className='lg:pt-10 bg-black'
+            style={{ backgroundImage: 'url(/images/reviewBg.png)', backgroundSize: '600px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', }}
         >
-            <h1 className='text-white text-center'>What They Say About Us</h1>
+            <h1 className='text-white text-center'><span className='font-bold'>What They Say </span>About Us</h1>
 
             <div className='lg:h-[700px] lg:flex justify-center items-center '
 

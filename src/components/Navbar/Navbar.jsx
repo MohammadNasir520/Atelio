@@ -79,7 +79,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="sticky inset-0 z-50 bg-transparent  lg:w-4/6 mx-auto text-black  ">
+        <div className="sticky inset-0 z-50 bg-black  lg:w-4/6 mx-auto text-black  ">
             <div className="">
                 <nav className="relative px-4 py-1 flex justify-between items-center ">
                     <div className="flex space-x-5">

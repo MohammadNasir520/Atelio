@@ -29,19 +29,19 @@ const Service = () => {
         },
     ]
     return (
-        <div className=''>
-            <h1 className='text-center my-5'>Service We Offer</h1>
-            <div className='grid lg:grid-cols-3 mx-auto  space-y-2'>
+        <div className='my-9'>
+            <h1 className='text-center my-5'><span className='font-bold'>Services</span> We Offer</h1>
+            <div className='grid lg:grid-cols-3 mx-auto  space-y-4'>
                 {
                     data?.map((datum, i) => {
-                        return <div className='h-[280px] w-[250px] mx-auto border'>
+                        return <div className='h-[280px] w-[250px] mx-auto '>
                             <img
                                 className='h-[200px] w-full'
                                 src={datum?.image}
 
                                 alt='serviceImg'></img>
                             <div className=''>
-                                <h1 className='my-2'>{datum?.title}</h1>
+                                <h1 className='my-t font-bold text-2xl'>{datum?.title}</h1>
 
                                 <Button>view All</Button>
                             </div>

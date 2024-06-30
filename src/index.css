@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+
+.bricolage-grotesque-baseTextFont {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 300; */
+  font-size: 35px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.waiting-for-the-sunrise-regular {
+  font-family: "Waiting for the Sunrise", cursive;
+  /* font-weight: 200; */
+  font-style: normal;
+}
