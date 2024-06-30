@@ -4,7 +4,18 @@ import Button from '../ui/Button';
 const ContactForm = () => {
     return (
         <div>
-            <form className='lg:w-3/4 mx-auto text-white space-y-8'>
+            <form className='lg:w-3/4 mx-auto text-white space-y-8'
+
+                style={
+                    {
+                        backgroundImage: 'url(/images/dispersionglass.png)',
+                        backgroundSize: '440px auto',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                        objectFit: "cover",
+                    }
+                }
+            >
                 <div className='lg:flex gap-10'>
                     <div className="relative h-11 w-full min-w-[200px]">
                         <input placeholder=""
