@@ -1,0 +1,11 @@
+.Team-banner {
+  background-position: center;
+  background-size: 200px auto;
+}
+
+@media (min-width: 1024px) {
+  .Team-banner {
+    background-position: 700px center;
+    background-size: 350px auto;
+  }
+}
