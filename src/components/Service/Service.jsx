@@ -1,31 +1,37 @@
 import React from 'react';
 import Button from '../ui/Button';
 
-const Service = ({ btnFunction, hashLink }) => {
-    const data = [
+const Service = ({ btnFunction, hashLink, setCategory }) => {
+    const Categories = [
         {
             title: "Logos & Marks",
-            image: '/images/bgImg2.jpg'
+            category: "logos&marks",
+            image: '/images/Thumbnails/Logo.jpg'
         },
         {
-            title: "Logos & Marks",
-            image: '/images/bgImg2.jpg'
+            title: "Product Packaging",
+            category: "productPackaging",
+            image: '/images/Thumbnails/packaging.jpg'
         },
         {
-            title: "Logos & Marks",
-            image: '/images/bgImg2.jpg'
+            title: "Visual Identity",
+            category: "visualIdentity",
+            image: '/images/Thumbnails/visual identity.jpg'
         },
         {
-            title: "Logos & Marks",
-            image: '/images/bgImg2.jpg'
+            title: "Social Media Post",
+            category: "socialMediaPost",
+            image: '/images/Thumbnails/social medias.jpg'
         },
         {
-            title: "Logos & Marks",
-            image: '/images/bgImg2.jpg'
+            title: "Banners Or Covers",
+            category: "bannersOrCovers",
+            image: '/images/Thumbnails/banners.jpg'
         },
         {
-            title: "Logos & Marks",
-            image: '/images/bgImg2.jpg'
+            title: "Bespoke Designs",
+            category: "bespokeDesigns",
+            image: '/images/Thumbnails/bespoke.jpg'
         },
     ]
     return (
@@ -33,15 +39,18 @@ const Service = ({ btnFunction, hashLink }) => {
             <h1 className='text-center my-5'><span className='font-bold'>Services</span> We Offer</h1>
             <div className='grid lg:grid-cols-3 mx-auto  space-y-4'>
                 {
-                    data?.map((datum, i) => {
-                        return <div className='h-[280px] w-[250px] mx-auto '>
+                    Categories?.map((category, i) => {
+                        return <div key={i} className='h-[280px] w-[250px] mx-auto '>
                             <img
-                                className='h-[200px] w-full'
-                                src={datum?.image}
+                                className='h-[180px] w-full'
+                                src={category?.image}
 
-                                alt='serviceImg'></img>
-                            <div className=''>
-                                <h1 className='my-t font-bold text-2xl'>{datum?.title}</h1>
+                                alt='serviceImg'>
+
+                            </img>
+                            <div onClick={() => setCategory(category?.category)} className=''>
+                                <h1 className='my-t font-bold text-2xl'>{category?.title}</h1>
+
 
                                 <Button btnFunction={btnFunction} hashLink={hashLink}>view All</Button>
                             </div>
