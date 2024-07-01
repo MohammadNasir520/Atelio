@@ -16,7 +16,7 @@ const ContactForm = () => {
                     }
                 }
             >
-                <div className='lg:flex gap-10'>
+                <div className='lg:flex gap-10 space-y-10 lg:space-y-0'>
                     <div className="relative h-11 w-full min-w-[200px]">
                         <input placeholder=""
                             className="peer h-full w-full border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100" />
@@ -60,11 +60,11 @@ const ContactForm = () => {
                     </label>
                 </div>
 
-                <div className='flex gap-10'>
+                <div className='lg:flex gap-10 space-y-6 lg:space-y-0'>
 
 
 
-                    <div className="relative h-11 w-full min-w-[200px]">
+                    <div className="relative h-11 w-full min-w-[200px] text-white">
                         <select className="peer h-full w-full border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 outline-none transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-none disabled:border-0 disabled:bg-blue-gray-50 ">
                             <option className='text-black' value="" disabled selected hidden>Select Option</option>
                             <option className='text-black' value="option1">Option 1</option>

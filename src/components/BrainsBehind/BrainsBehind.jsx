@@ -22,18 +22,18 @@ const BrainsBehind = () => {
         },
     ]
     return (
-        <div className='h-[400px] p-8'>
+        <div className='lg:h-[400px] p-8'>
             <div>
 
                 <h1 className='text-center my-4'> <span className='font-bold'>brains behind</span> <span>The Scene</span></h1>
-                <div className='flex justify-around w-full items-center'>
+                <div className='lg:flex justify-around w-full items-center'>
                     {
                         data?.map((datum, i) => {
-                            return <div key={i} className='relative'>
+                            return <div key={i} className='relative '>
                                 <div
                                     key={i}
                                     style={{ backgroundImage: 'url(/images/bgshape.svg)', backgroundSize: '440px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', objectFit: "cover", }}
-                                    className='w-44'
+                                    className='w-44 flex justify-center'
                                 >
                                     <img src={datum?.image} className='h-40 w-40' alt="" />
                                 </div>
