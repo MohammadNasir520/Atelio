@@ -1,9 +1,9 @@
 import React from 'react';
 
 const SingleServiceCard = ({ datum, index }) => {
-    const { title1, title2, description, services } = datum
+    const { title1, title2, description, services, image } = datum
     return (
-        <div className={`lg:flex lg:h-[400px] ${index % 2 == 0 ? "bg-black text-white" : "bg-white text-black flex-row-reverse"}  items-center justify-center lg:px-10 py-6`}
+        <div className={`lg:flex lg:h-[400px] ${index % 2 == 0 ? "bg-black text-white" : "bg-white text-black flex-row-reverse"}  items-center justify-center lg:px-20 py-6`}
             style={{
                 backgroundImage: `url("${datum?.bgImg}")`,
                 backgroundSize: "300px auto",
@@ -13,7 +13,7 @@ const SingleServiceCard = ({ datum, index }) => {
         >
             <div className='flex justify-center items-center lg:w-1/2'>
                 <img
-                    src="/images/bgImg.png"
+                    src={image}
                     className='lg:h-60 lg:w-60'
                     alt="" />
             </div>

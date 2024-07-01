@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../ui/Button';
 
-const Service = () => {
+const Service = ({ btnFunction, hashLink }) => {
     const data = [
         {
             title: "Logos & Marks",
@@ -43,7 +43,7 @@ const Service = () => {
                             <div className=''>
                                 <h1 className='my-t font-bold text-2xl'>{datum?.title}</h1>
 
-                                <Button>view All</Button>
+                                <Button btnFunction={btnFunction} hashLink={hashLink}>view All</Button>
                             </div>
                         </div>
                     })

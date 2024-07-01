@@ -5,6 +5,7 @@ import ContactPage from "../pages/contact/ContactPage";
 import TeamPage from "../pages/team/TeamPage";
 import ServicePage from "../pages/service/ServicePage";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import WorkPage from "../pages/work/WorkPage";
 
 export const router = createBrowserRouter([
     {
@@ -30,6 +31,11 @@ export const router = createBrowserRouter([
             {
                 path: "/service",
                 element: <ServicePage></ServicePage>
+
+            },
+            {
+                path: "/work",
+                element: <WorkPage></WorkPage>
 
             },
         ]
