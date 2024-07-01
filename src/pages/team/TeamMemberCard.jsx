@@ -29,18 +29,18 @@ const TeamMemberCard = () => {
             <div>
 
 
-                <div className='flex flex-col w-10/12 mx-auto items-center'>
+                <div className='lg:flex lg:flex-col w-10/12 mx-auto items-center'>
                     {
                         data?.map((datum, i) => {
-                            return <div key={i} className='relative flex items-center  my-10 w-3/4 '>
+                            return <div key={i} className='relative lg:flex items-center  my-10 lg:w-3/4 '>
                                 <div
                                     key={i}
                                     style={{ backgroundImage: 'url(/images/bgshape.svg)', backgroundSize: '550px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', }}
-                                    className='w-2/5 flex justify-center'
+                                    className='lg:w-2/5 flex justify-center'
                                 >
-                                    <img src={datum?.image} className='h-60 w-60 mb-16 ml-4 ' alt="" />
+                                    <img src={datum?.image} className='lg:h-60 lg:w-60 mb-16 ml-4 ' alt="" />
                                 </div>
-                                <div className='w-3/5 bottom-3'>
+                                <div className='lg:w-3/5 bottom-3'>
                                     <h1 className='bricolage-grotesque-baseTextFont '>{datum?.name}</h1>
                                     <h1 className='text-violet-500 text-xl mb-2'>{datum?.designation}</h1>
                                     <p className='text-sm'>{datum?.description}</p>

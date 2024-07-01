@@ -149,6 +149,7 @@ const Navbar = () => {
 
                                 {navItems}
                             </ul>
+                            <div className=" lg:hidden w-40 border rounded-3xl px-2 border-green-600 border-b-4 cursor-pointer border-t-2"><span className='flex items-center justify-center text-sm text-white'>whatsApp <FiPhoneCall className="w-4 h-4  border  rounded-full ml-1 " /></span> </div>
                         </div>
                         <div className="mt-auto">
                             <div className="pt-6">

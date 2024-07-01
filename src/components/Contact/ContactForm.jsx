@@ -3,9 +3,10 @@ import Button from '../ui/Button';
 import { useForm } from "react-hook-form";
 
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
 
     const form = useRef();
     const onSubmit = (data) => {
@@ -18,6 +19,8 @@ const ContactForm = () => {
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    toast.success(`${data.name} we have received your Email. check your email inbox`)
+                    reset()
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
