@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
 const WorkPage = () => {
     const navigate = useNavigate()
-    const [category, setCategory] = useState("")
+    const [category, setCategory] = useState("logos&marks")
     const [data, setData] = useState([])
 
     useEffect(() => {
