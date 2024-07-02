@@ -11,7 +11,7 @@ const ContactPage = () => {
             </div>
             <div className='lg:mt-[600px] '>
                 <div className='my-10'>
-                    <h1 className=' text-white text-center text-xl'>Submit Your Query</h1>
+                    <h1 className=' fontFranklin text-white text-center text-xl'>Submit Your Query</h1>
                     <h1 className='bricolage-grotesque-baseTextFont  text-white text-center text-xl mt-5'>LET US ASSIST YOU WITH YOUR NEEDS</h1>
                 </div>
                 <ContactForm></ContactForm>

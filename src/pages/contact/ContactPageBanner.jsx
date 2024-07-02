@@ -21,9 +21,9 @@ const ContactBanner = () => {
 
             <div className='lg:h-[650px] lg:flex items-center' >
 
-                <div className=' lg:w-2/6 lg:ml-32 px-4 text-white h-[300px]'>
-                    <h1 className='bricolage-grotesque-baseTextFont  font-thin'>Feel Free To Contact Us</h1>
-                    <h1 className='bricolage-grotesque-baseTextFont  font-bold'>We're Here For <br></br>Your Solutions</h1>
+                <div className=' lg:w-3/6 lg:ml-32 px-4 text-white h-[300px]'>
+                    <h1 className='fontFranklin  font-thin'>Feel Free To Contact Us</h1>
+                    <h1 className='bricolage-grotesque-baseTextFont  font-bold !text-5xl !leading-snug'>We're Here For <br></br>Your Solutions</h1>
 
                     <Button>View Solutions</Button>
                 </div>

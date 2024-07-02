@@ -51,7 +51,7 @@ const Reviews = () => {
                                         </div>
                                         <div>
                                             <h1>{datum.name}</h1>
-                                            <h1 className='text-fuchsia-600'>{datum.designation}</h1>
+                                            <h1 className='fontFranklin text-fuchsia-600'>{datum.designation}</h1>
                                         </div>
                                     </div>
                                 </div>

@@ -81,13 +81,15 @@ const Navbar = () => {
     return (
         <div className="sticky inset-0 z-50 bg-black   mx-auto text-black lg:px-36 ">
             <div className="">
-                <nav className="relative px-4 py-1 flex justify-between items-center ">
+                <nav className="relative px-4  flex justify-between items-center py-3">
                     <div className="flex space-x-5">
 
-                        <NavLink className="text-3xl font-bold leading-none " to={''}>
-                            <h4 className="mb-2 block text-white  font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                                Atlio
-                            </h4>
+                        <NavLink className="" to={'/'}>
+                            <img
+                                className='h-7 w-24 '
+                                src="/images/Atelio Logo 2.png"
+
+                                alt="" />
                         </NavLink>
                     </div>
 

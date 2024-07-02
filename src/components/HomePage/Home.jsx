@@ -14,7 +14,7 @@ const Home = () => {
             <div className='mt-[550px]'>
                 <Brands></Brands>
                 <DetailCount></DetailCount>
-                <Service></Service>
+                <Service hashLink={"/work#recent-work"}></Service>
                 <Reviews></Reviews>
                 <BrainsBehind></BrainsBehind>
                 <Contact></Contact>

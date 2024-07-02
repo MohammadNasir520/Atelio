@@ -47,7 +47,7 @@ const BrainsBehind = () => {
                 </div>
             </div>
             <div className='flex justify-center w-full mt-2'>
-                <Link>  <Button>Contact Us</Button></Link>
+                <Link>  <Button hashLink={"/contact"}>Contact Us</Button></Link>
             </div>
         </div>
     );

@@ -24,15 +24,12 @@ const WorkPage = () => {
 
     }, [category])
     console.log(data)
-    const loadProductByCategory = () => {
 
-        // navigate("/recent-work")
-    }
     return (
         <div>
             <WorkBanner></WorkBanner>
 
-            <Service btnFunction={loadProductByCategory} setCategory={setCategory} hashLink={"/work#recent-work"}></Service>
+            <Service setCategory={setCategory} hashLink={"/work#recent-work"}></Service>
             <Reviews></Reviews>
             <BrainsBehind></BrainsBehind>
             <DetailCount></DetailCount>
