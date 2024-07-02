@@ -25,7 +25,7 @@ const BrainsBehind = () => {
         <div className='lg:h-[400px] p-8'>
             <div>
 
-                <h1 className='text-center my-4'> <span className='font-bold'>brains behind</span> <span>The Scene</span></h1>
+                <h1 className='text-center my-4'> <span className='font-bold'>brains behind</span> <span>  <span className='fontFranklin text-gray-400 '>The Scene</span></span></h1>
                 <div className='lg:flex justify-around w-full items-center'>
                     {
                         data?.map((datum, i) => {
@@ -38,8 +38,8 @@ const BrainsBehind = () => {
                                     <img src={datum?.image} className='h-40 w-40' alt="" />
                                 </div>
                                 <div className='shadow-2xl bg-transparent  text-center bottom-3'>
-                                    <h1 >{datum?.name}</h1>
-                                    <h1>{datum?.designation}</h1>
+                                    <h1 className='text-xl font-bold'>{datum?.name}</h1>
+                                    <h1 className='fontFranklin text-fuchsia-700 '>{datum?.designation}</h1>
                                 </div>
                             </div>
                         })

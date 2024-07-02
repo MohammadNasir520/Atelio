@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+@font-face {
+  font-family: "FranklinNotes";
+  src: url("/public/font/FranklinnotesRegular-OVPGp.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bricolage-grotesque-baseTextFont {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 300; */
+  font-size: 35px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.fontFranklin {
+  font-family: "FranklinNotes";
+  font-weight: 50;
+}

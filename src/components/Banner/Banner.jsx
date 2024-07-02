@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../ui/Button';
-import "./Banner.css"
+import "../Style.Css/Style.css"
 
 
 const Banner = () => {

@@ -42,7 +42,7 @@ const TeamMemberCard = () => {
                                 </div>
                                 <div className='lg:w-3/5 bottom-3'>
                                     <h1 className='bricolage-grotesque-baseTextFont '>{datum?.name}</h1>
-                                    <h1 className='text-violet-500 text-xl mb-2'>{datum?.designation}</h1>
+                                    <h1 className='fontFranklin text-violet-500 text-xl mb-2'>{datum?.designation}</h1>
                                     <p className='text-sm'>{datum?.description}</p>
                                 </div>
                             </div>

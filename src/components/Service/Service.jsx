@@ -36,7 +36,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
     ]
     return (
         <div className='my-9'>
-            <h1 className='text-center my-5'><span className='font-bold'>Services</span> We Offer</h1>
+            <h1 className='text-center my-5'><span className='font-bold'>Services</span > <span className='fontFranklin text-gray-400 '> We Offer</span></h1>
             <div className='grid lg:grid-cols-3 mx-auto  space-y-4'>
                 {
                     Categories?.map((category, i) => {

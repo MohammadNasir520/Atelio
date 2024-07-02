@@ -30,7 +30,7 @@ const Reviews = () => {
                 backgroundPosition: 'center',
             }}
         >
-            <h1 className='text-white text-center'><span className='font-bold'>What They Say </span>About Us</h1>
+            <h1 className='text-white text-center'><span className='font-bold'>What They Say </span > <span className='fontFranklin text-gray-400 '>About Us</span></h1>
 
             <div className='min-h-screen lg:h-[700px] lg:flex justify-center items-center '
 

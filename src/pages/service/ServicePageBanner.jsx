@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../../components/ui/Button';
-
+import "../../components/Style.Css/Style.css"
 
 
 
@@ -22,11 +22,11 @@ const ServiceBanner = () => {
             <div className='lg:h-[650px] lg:flex justify-center text-center  items-center' >
 
                 <div className='  text-white h-[300px]'>
-                    <h1 className='bricolage-grotesque-baseTextFont  font-thin'>We Craft Solutions <br></br>
+                    <h1 className='bricolage-grotesque-baseTextFont  text-7xl font-thin leading-normal'>We Craf<span className='font-bold' >t Solutions </span><br></br>
 
-                        That Create Long-lasting <br></br>
+                        Tha <span className='font-bold'>t Create Long-lasting <br></br>
 
-                        Growth For Brands</h1>
+                            Growth </span> For Brands</h1>
 
 
                     <Button>View Solutions</Button>

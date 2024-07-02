@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ScrollLink } from 'react-scroll';
 import { HashLink } from 'react-router-hash-link';
+import "../Style.Css/Style.css"
 
 const Button = ({ children, type, bgColor, btnFunction, hashLink }) => {
     return (
@@ -11,16 +10,19 @@ const Button = ({ children, type, bgColor, btnFunction, hashLink }) => {
                     <button
                         onClick={() => { btnFunction ? btnFunction() : "" }}
                         type={type}
-                        className={` waiting-for-the-sunrise-regular ${bgColor ? bgColor : "bg-violet-700"} px-4  rounded-2xl mt-2 py-1 text-white`}>
+                        className={` ${bgColor ? bgColor : "bg-violet-700"} px-4  rounded-2xl mt-2 py-1 text-white`}>
+                        <h1 className='fontFranklin '>
 
-                        {children}
+                            {children}
+                        </h1>
+
                     </button>
                 </HashLink>
                     :
                     <button
                         onClick={() => { btnFunction ? btnFunction() : "" }}
                         type={type}
-                        className={` waiting-for-the-sunrise-regular ${bgColor ? bgColor : "bg-violet-700"} px-4  rounded-2xl mt-2 py-1 text-white`}>
+                        className={`fontFranklin  ${bgColor ? bgColor : "bg-violet-700"} px-4  rounded-2xl mt-2 py-1 text-white`}>
 
                         {children}
                     </button>

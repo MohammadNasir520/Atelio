@@ -40,7 +40,7 @@ const Brands = () => {
     ]
     return (
         <div className='lg:h-[500px] space-y-8 my-8'>
-            <h1 className='text-center'><span className=' font-bold'>Trusted by 100+ Brands </span><span>All over the world</span></h1>
+            <h1 className='text-center'><span className=' font-bold'>Trusted by 100+ Brands </span><span className='fontFranklin text-gray-400 '>All over the world</span></h1>
             <div>
                 <Marquee direction='left'>
 

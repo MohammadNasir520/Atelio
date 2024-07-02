@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../../components/ui/Button';
 
 import "./TeamPageBanner.css"
+import "../../components/Style.Css/Style.css"
 
 
 
@@ -22,11 +23,11 @@ const TeamBanner = () => {
             <div className='lg:h-[650px] lg:flex items-center' >
 
                 <div className=' lg:w-2/6 lg:ml-32  text-white h-[300px]'>
-                    <h1 className='bricolage-grotesque-baseTextFont  font-thin'>WE ARE THE BRAINS <br></br>
+                    <h1 className='bricolage-grotesque-baseTextFont font-thin '>WE ARE THE <span className='font-bold'> BRAINS <br></br>
 
-                        BEHIND YOUR <br></br>
+                        BEHIND</span> YOUR <br></br>
 
-                        CREATIVE SOLUTIONS</h1>
+                        CREATIVE <span className='font-bold'>SOLUTIONS</span></h1>
 
 
                     <Button>View Solutions</Button>
