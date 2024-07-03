@@ -1,58 +1,73 @@
 import React from 'react';
 import Button from '../ui/Button';
+import Title from '../ui/Title';
+
+import logosMarks from '/images/Thumbnails/Logo.jpg'
+import packaging from '/images/Thumbnails/packaging.jpg'
+import visualIdentity from '/images/Thumbnails/visual identity.jpg'
+import socialMedia from '/images/Thumbnails/social medias.jpg'
+import banners from '/images/Thumbnails/banners.jpg'
+import bespoke from '/images/Thumbnails/bespoke.jpg'
 
 const Service = ({ btnFunction, hashLink, setCategory }) => {
     const Categories = [
         {
             title: "Logos & Marks",
             category: "logos&marks",
-            image: '/images/Thumbnails/Logo.jpg'
+            image: logosMarks
         },
         {
             title: "Product Packaging",
             category: "productPackaging",
-            image: '/images/Thumbnails/packaging.jpg'
+            image: packaging
         },
         {
             title: "Visual Identity",
             category: "visualIdentity",
-            image: '/images/Thumbnails/visual identity.jpg'
+            image: visualIdentity
         },
         {
             title: "Social Media Post",
             category: "socialMediaPost",
-            image: '/images/Thumbnails/social medias.jpg'
+            image: socialMedia
         },
         {
             title: "Banners Or Covers",
             category: "bannersOrCovers",
-            image: '/images/Thumbnails/banners.jpg'
+            image: banners
         },
         {
             title: "Bespoke Designs",
             category: "bespokeDesigns",
-            image: '/images/Thumbnails/bespoke.jpg'
+            image: bespoke
         },
     ]
     return (
         <div className='my-9'>
-            <h1 className='text-center my-5'><span className='font-bold'>Services</span > <span className='fontFranklin text-gray-400 '> We Offer</span></h1>
-            <div className='grid lg:grid-cols-3 mx-auto  space-y-4'>
+            <div className='w-full'>
+
+                <Title boldText={"Services"} smallText={" We Oer"}></Title>
+            </div>
+            <div className='grid lg:grid-cols-3 mx-auto lg:px-12 '>
                 {
                     Categories?.map((category, i) => {
-                        return <div key={i} className='h-[280px] w-[250px] mx-auto '>
-                            <img
-                                className='h-[180px] w-full'
-                                src={category?.image}
-
-                                alt='serviceImg'>
-
-                            </img>
-                            <div onClick={() => setCategory(category?.category)} className=''>
-                                <h1 className='my-t font-bold text-2xl'>{category?.title}</h1>
+                        return <div key={i} className='h-[300px] w-[450px] mx-auto flex items-center flex-col m'>
+                            <div>
 
 
-                                <Button btnFunction={btnFunction} hashLink={hashLink}>view All</Button>
+                                <img
+                                    className='h-[200px] w-full'
+                                    src={category?.image}
+
+                                    alt='serviceImg'>
+
+                                </img>
+                                <div onClick={() => setCategory(category?.category)} className=''>
+                                    <h1 className='my-t font-bold text-2xl'>{category?.title}</h1>
+
+
+                                    <Button btnFunction={btnFunction} hashLink={hashLink} bgColor={i > 2 && "bg-green-600"}>view All</Button>
+                                </div>
                             </div>
                         </div>
                     })

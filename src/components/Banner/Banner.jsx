@@ -6,7 +6,7 @@ import "../Style.Css/Style.css"
 const Banner = () => {
     return (
         <div
-            className=' mt-[-65px] bg-black'
+            className=' mt-[-65px] lg:py-5 bg-black'
             style={{ backgroundImage: 'url(/images/bgImg4.png)', backgroundSize: '950px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'right -190px center', objectFit: "cover", }}
         >
 

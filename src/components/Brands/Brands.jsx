@@ -1,5 +1,6 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
+import Title from '../ui/Title';
 
 const Brands = () => {
 
@@ -39,9 +40,9 @@ const Brands = () => {
         },
     ]
     return (
-        <div className=' my-6'>
-            <div className=''>
-                <h1 className='text-center'><span className=' font-bold text-2xl'>Trusted by 100+ Brands </span><span className='fontFranklin text-gray-400 '>All over the world</span></h1>
+        <div className='mb-12 mt-2'>
+            <div className='mb-12'>
+                <Title boldText={"Trusted by 100+ Brands"} smallText={"A Over the World"}></Title>
                 <Marquee pauseOnHover direction='left'>
 
                     {images?.map((image, i) => {

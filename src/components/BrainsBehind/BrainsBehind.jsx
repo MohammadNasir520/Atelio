@@ -1,22 +1,27 @@
 import React from 'react';
 import Button from '../ui/Button';
 import { Link } from 'react-router-dom';
+import Title from '../ui/Title';
+
+import asifZaman from "/images/Asif Zaman-01.png"
+import tasnimSultana from "/images/Tasnim-01.png"
+import souravHalder from "/images/pic-removebg-preview.png"
 
 const BrainsBehind = () => {
 
     const data = [
         {
-            image: "/images/Asif Zaman-01.png",
+            image: asifZaman,
             name: "MD ASIF ZAMAN",
             designation: "Creative Director"
         },
         {
-            image: "/images/Tasnim-01.png",
+            image: tasnimSultana,
             name: "TASNIM SULTANA",
             designation: "Brand Architect"
         },
         {
-            image: "/images/pic-removebg-preview.png",
+            image: souravHalder,
             name: "SAURAV HALDER",
             designation: "Visual Storyteer"
         },
@@ -25,7 +30,7 @@ const BrainsBehind = () => {
         <div className='lg:h-[400px] p-8'>
             <div>
 
-                <h1 className='text-center my-4'> <span className='font-bold'>brains behind</span> <span>  <span className='fontFranklin text-gray-400 '>The Scene</span></span></h1>
+                <Title boldText={"brains behind "} smallText={"The Scene"}></Title>
                 <div className='lg:flex justify-around w-full items-center'>
                     {
                         data?.map((datum, i) => {
@@ -47,7 +52,7 @@ const BrainsBehind = () => {
                 </div>
             </div>
             <div className='flex justify-center w-full mt-2'>
-                <Link>  <Button hashLink={"/contact"}>Contact Us</Button></Link>
+                <Link>  <Button hashLink={"/contact"} bgColor={"bg-green-600"}>Contact Us</Button></Link>
             </div>
         </div>
     );

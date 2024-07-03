@@ -22,7 +22,7 @@ const Reviews = () => {
     return (
 
         <div
-            className='py-36 lg:pt-10 bg-black'
+            className='py-5 lg:pt-10 bg-black'
             style={{
                 backgroundImage: 'url(/images/reviewBg.png)',
                 backgroundSize: '600px auto',
@@ -30,16 +30,16 @@ const Reviews = () => {
                 backgroundPosition: 'center',
             }}
         >
-            <h1 className='text-white text-center'><span className='font-bold'>What They Say </span > <span className='fontFranklin text-gray-400 '>About Us</span></h1>
+            <h1 className='text-white text-center space-y-3'><span className='font-bold'>What They Say </span > <span className='fontFranklin text-gray-400 '>About Us</span></h1>
 
-            <div className='min-h-screen lg:h-[700px] lg:flex justify-center items-center '
+            <div className=' lg:h-[600px] lg:flex justify-center items-center '
 
             >
                 <div className='lg:flex gap-20  '>
 
                     {data.map((datum, index) => (
-                        <div key={index} className={`relative ${index === 1 ? "lg:top-0  lg:-mt-10  lg:mb-10" : "lg:top-0 lg:mt-24 "}   `}>
-                            <div className='space-y-20 lg:space-y-0 '>
+                        <div key={index} className={`${index === 1 ? "lg:top-0  lg:-mt-10  lg:mb-10" : "lg:top-0 lg:mt-24 "}  mt-20 mb-2 `}>
+                            <div className=' lg:space-y-0  relative mx-8 '>
                                 <div className='h-16 lg:w-3/4 bg-white flex px-3 items-center rounded-full border-fuchsia-500 border absolute top-[-40px] left-[25px]'>
                                     <div className='flex gap-3'>
                                         <div className='flex justify-center items-center'>
@@ -55,7 +55,7 @@ const Reviews = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='h-72 w-60 bg-white flex justify-center pt-8 px-5 text-justify rounded-3xl border-fuchsia-500 border'>
+                                <div className='h-[18rem] w-[15rem] bg-white flex justify-center pt-8 px-5 text-justify rounded-[40px] border-fuchsia-500 border'>
                                     {datum.description}
                                 </div>
                             </div>
