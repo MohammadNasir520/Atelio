@@ -5,7 +5,7 @@
 
 @media (min-width: 1024px) {
   .contact-banner {
-    background-position: 700px center;
-    background-size: 350px auto;
+    background-position: 650px 100px;
+    background-size: 550px auto;
   }
 }
