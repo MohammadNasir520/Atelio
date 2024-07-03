@@ -26,7 +26,7 @@ const WorkPage = () => {
     console.log(data)
 
     return (
-        <div>
+        <div className=''>
             <WorkBanner></WorkBanner>
 
             <Service setCategory={setCategory} hashLink={"/work#recent-work"}></Service>

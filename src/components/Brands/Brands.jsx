@@ -40,13 +40,13 @@ const Brands = () => {
         },
     ]
     return (
-        <div className='mb-12 mt-2'>
+        <div className='mb-12 '>
             <div className='mb-12'>
                 <Title boldText={"Trusted by 100+ Brands"} smallText={"A Over the World"}></Title>
                 <Marquee pauseOnHover direction='left'>
 
                     {images?.map((image, i) => {
-                        return <div key={i} className='h-40 w-60 mx-6' >
+                        return <div key={i} className='h-44 w-64 mx-6' >
                             <img src={image.src} className='h-full w-full'></img>
                         </div>
                     })}
@@ -56,7 +56,7 @@ const Brands = () => {
                 <Marquee pauseOnHover direction='right'>
 
                     {images?.map((image, i) => {
-                        return <div key={i} className='h-40 w-60 mx-6' >
+                        return <div key={i} className='h-44 w-64 mx-6' >
                             <img src={image.src} className='h-full w-full'></img>
                         </div>
                     })}

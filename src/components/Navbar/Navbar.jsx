@@ -93,7 +93,7 @@ const Navbar = () => {
 
 
     return (
-        <div className={`${isScrolled ? "bg-black top-0" : "bg-transparent top-6"} sticky  inset-0 z-50   mx-auto text-black lg:px-36 `}>
+        <div className={`${isScrolled ? "bg-black top-0" : "bg-transparent lg:top-6 "} sticky  inset-0 z-50   mx-auto text-black lg:px-36 `}>
             <div className="">
                 <nav className="relative px-4  flex justify-between items-center py-3">
                     <div className="flex space-x-5">

@@ -43,7 +43,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
         },
     ]
     return (
-        <div className='my-9'>
+        <div className='my-9 bg-white'>
             <div className='w-full'>
 
                 <Title boldText={"Services"} smallText={" We Oer"}></Title>

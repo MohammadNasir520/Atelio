@@ -1,11 +1,12 @@
 .work-banner {
   background-position: center;
-  background-size: 300px auto;
+  background-size: 760px auto;
+  background-position: -100px center;
 }
 
 @media (min-width: 1024px) {
   .work-banner {
-    background-position: 700px center;
-    background-size: 650px auto;
+    background-position: 600px center;
+    background-size: 850px auto;
   }
 }

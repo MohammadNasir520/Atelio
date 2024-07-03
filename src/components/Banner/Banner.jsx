@@ -13,13 +13,13 @@ const Banner = () => {
 
             <div className='h-screen flex items-center' >
 
-                <div className=' lg:w-2/6 lg:ml-32 px-4 text-white h-[300px]'>
+                <div className=' lg:w-4/6 lg:ml-32 px-4 text-white h-[300px]'>
                     <h1 className='bricolage-grotesque-baseTextFont  font-thin'>WE THINK</h1>
                     <h1 className='bricolage-grotesque-baseTextFont  font-bold'>OUTSIDE THE BOX</h1>
                     <h1 className='bricolage-grotesque-baseTextFont  font-thin'>FOR CREATIVE</h1>
                     <h1 className='bricolage-grotesque-baseTextFont  font-bold'>SOLUTIONS</h1>
                     <div className='mt-4'>
-                        <Button>View Solutions</Button>
+                        <Button hashLink={"/service"}>View Solutions</Button>
                     </div>
                 </div>
 

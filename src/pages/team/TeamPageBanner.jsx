@@ -4,7 +4,7 @@ import Button from '../../components/ui/Button';
 import "./TeamPageBanner.css"
 import "../../components/Style.Css/Style.css"
 
-import teamBannerImage from "/images/teamBgImg.png"
+import teamBannerImage from "/images/teamBg3.png"
 
 
 
@@ -12,7 +12,7 @@ import teamBannerImage from "/images/teamBgImg.png"
 const TeamBanner = () => {
     return (
         <div
-            className='Team-banner  lg:absolute top-0 right-0 left-0 bg-black lg:px-14 '
+            className='Team-banner mt-[-65px] lg:py-5 bg-black lg:px-14 '
             style={{
                 backgroundImage: `url(${teamBannerImage})`,
 
@@ -23,9 +23,9 @@ const TeamBanner = () => {
         >
 
 
-            <div className='lg:h-[650px] lg:flex items-center' >
+            <div className='h-[650px] flex items-center' >
 
-                <div className=' lg:w-2/6 lg:ml-32  text-white h-[300px]'>
+                <div className=' lg:w-4/6 lg:ml-28  text-white h-[300px]'>
                     <h1 className='bricolage-grotesque-baseTextFont font-thin '>WE ARE THE <span className='font-bold'> BRAINS <br></br>
 
                         BEHIND</span> YOUR <br></br>
@@ -33,7 +33,9 @@ const TeamBanner = () => {
                         CREATIVE <span className='font-bold'>SOLUTIONS</span></h1>
 
 
-                    <Button>View Solutions</Button>
+                    <div className='mt-6'>
+                        <Button bgColor={"green"} hashLink={'/service'}>View Solutions</Button>
+                    </div>
                 </div>
 
             </div>

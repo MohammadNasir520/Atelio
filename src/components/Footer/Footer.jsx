@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='lg:p-8 bg-black'>
+        <div className='py-14 bg-black'>
 
             <div className='flex items-end lg:w-11/12 text-white justify-between px-9 mx-auto '>
                 <div className='lg:w-1/2'>   <NavLink className="" to={'/'}>
@@ -14,7 +14,7 @@ const Footer = () => {
 
                         alt="" />
                 </NavLink></div>
-                <div className='h-64  flex  items-end justify-around  lg:w-1/2 gap-5 lg:gap-0'>
+                <div className=' flex  items-end justify-around  lg:w-1/2 gap-5 lg:gap-0'>
 
                     <Link to={"/"}>Home</Link>
                     <Link to={"/team"}>Team</Link>
