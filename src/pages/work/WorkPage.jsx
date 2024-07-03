@@ -6,6 +6,7 @@ import BrainsBehind from '../../components/BrainsBehind/BrainsBehind';
 import DetailCount from '../../components/DetailCount/DetailCount';
 import RecentWorks from './RecentWorks';
 import { useNavigate } from 'react-router-dom';
+import NeedCreativeSolutionCard from '../../components/NeedCreativeSolutionCard/NeedCreativeSolutionCard';
 
 const WorkPage = () => {
     const navigate = useNavigate()
@@ -35,6 +36,8 @@ const WorkPage = () => {
             <DetailCount></DetailCount>
 
             <RecentWorks data={data}></RecentWorks>
+
+            <NeedCreativeSolutionCard text="black"></NeedCreativeSolutionCard>
 
         </div>
     );
