@@ -32,7 +32,7 @@ const ContactForm = () => {
         console.log('submit==', data)
     }
     return (
-        <div>
+        <div className=''>
             <form
                 ref={form}
                 onSubmit={handleSubmit(onSubmit)}

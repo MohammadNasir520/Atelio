@@ -31,7 +31,7 @@ const Navbar = () => {
     };
 
     const NavFont =
-        'mr-4 block cursor-pointer py-1.5 font-sans text-xl  leading-relaxed  antialiased';
+        'mr-4 block cursor-pointer py-1.5 font-sans   leading-relaxed  antialiased';
 
     const navItemss = [
         {
@@ -48,7 +48,7 @@ const Navbar = () => {
         },
         {
             to: "/work",
-            title: "work",
+            title: "Work",
         },
         {
             to: "/contact",
@@ -69,10 +69,10 @@ const Navbar = () => {
                             to={item?.to}
                             className={({ isActive }) =>
                                 ` ${isActive
-                                    ? 'text-green-700  p-4 font-bold'
+                                    ? 'text-green-700   font-bold text-xl'
                                     : `${isMenuOpen
-                                        ? 'block p-4  text-xs   text-white '
-                                        : 'text-sm text-white  '
+                                        ? 'block    text-white '
+                                        : ' text-white  '
                                     }  `
                                 } ${NavFont}`
                             }
@@ -93,7 +93,7 @@ const Navbar = () => {
 
 
     return (
-        <div className={`${isScrolled ? "bg-black top-0" : "bg-transparent lg:top-6 "} sticky  inset-0 z-50   mx-auto text-black lg:px-36 `}>
+        <div className={`${isScrolled ? "bg-black top-0" : "bg-transparent lg:top-6 "} sticky  inset-0 z-50   mx-auto text-black lg:px-32`}>
             <div className="">
                 <nav className="relative px-4  flex justify-between items-center py-3">
                     <div className="flex space-x-5">
@@ -165,7 +165,7 @@ const Navbar = () => {
 
                                 {navItems}
                             </ul>
-                            <div className=" lg:hidden w-40 border rounded-3xl px-2 border-green-600 border-b-4 cursor-pointer border-t-2"><span className='flex items-center justify-center text-sm text-white'>whatsApp <FiPhoneCall className="w-4 h-4  border  rounded-full ml-1 " /></span> </div>
+                            <div className="lg:hidden w-28 border rounded-3xl px-2 border-green-600  cursor-pointer "><span className='flex items-center justify-center text-sm text-white'>WhatsApp <FiPhoneCall className="w-4 h-4  border  border-green-600  rounded-full ml-1 " /></span> </div>
                         </div>
                         <div className="mt-auto">
                             <div className="pt-6">
