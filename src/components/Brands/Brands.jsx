@@ -39,24 +39,24 @@ const Brands = () => {
         },
     ]
     return (
-        <div className='lg:h-[500px] space-y-8 my-8'>
-            <h1 className='text-center'><span className=' font-bold'>Trusted by 100+ Brands </span><span className='fontFranklin text-gray-400 '>All over the world</span></h1>
-            <div>
-                <Marquee direction='left'>
+        <div className=' my-6'>
+            <div className=''>
+                <h1 className='text-center'><span className=' font-bold text-2xl'>Trusted by 100+ Brands </span><span className='fontFranklin text-gray-400 '>All over the world</span></h1>
+                <Marquee pauseOnHover direction='left'>
 
                     {images?.map((image, i) => {
-                        return <div key={i} className='h-40 w-40 mx-6' >
-                            <img src={image.src}></img>
+                        return <div key={i} className='h-40 w-60 mx-6' >
+                            <img src={image.src} className='h-full w-full'></img>
                         </div>
                     })}
                 </Marquee>
             </div>
             <div>
-                <Marquee direction='right'>
+                <Marquee pauseOnHover direction='right'>
 
                     {images?.map((image, i) => {
-                        return <div key={i} className='h-40 w-40 mx-6' >
-                            <img src={image.src}></img>
+                        return <div key={i} className='h-40 w-60 mx-6' >
+                            <img src={image.src} className='h-full w-full'></img>
                         </div>
                     })}
                 </Marquee>

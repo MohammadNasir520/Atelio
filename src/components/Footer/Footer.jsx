@@ -17,10 +17,10 @@ const Footer = () => {
                 <div className='h-64  flex  items-end justify-around  lg:w-1/2 gap-5 lg:gap-0'>
 
                     <Link to={"/"}>Home</Link>
-                    <Link to={"/"}>Team</Link>
-                    <Link to={"/"}>Services</Link>
-                    <Link to={"/"}>Work</Link>
-                    <Link to={"/"}>Contact</Link>
+                    <Link to={"/team"}>Team</Link>
+                    <Link to={"/service"}>Services</Link>
+                    <Link to={"/work"}>Work</Link>
+                    <Link to={"/contact"}>Contact</Link>
                 </div>
             </div>
             <hr className='text-white mt-2 font-bold text-2xl' />

@@ -1,9 +1,23 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FiPhoneCall } from "react-icons/fi";
 
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            setIsScrolled(scrollTop > 50);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
 
     const user = {}
@@ -17,7 +31,7 @@ const Navbar = () => {
     };
 
     const NavFont =
-        'mr-4 block cursor-pointer py-1.5 font-sans text-xl font-medium leading-relaxed  antialiased';
+        'mr-4 block cursor-pointer py-1.5 font-sans text-xl  leading-relaxed  antialiased';
 
     const navItemss = [
         {
@@ -79,7 +93,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="sticky inset-0 z-50 bg-black   mx-auto text-black lg:px-36 ">
+        <div className={`${isScrolled ? "bg-black top-0" : "bg-transparent top-6"} sticky  inset-0 z-50   mx-auto text-black lg:px-36 `}>
             <div className="">
                 <nav className="relative px-4  flex justify-between items-center py-3">
                     <div className="flex space-x-5">
@@ -111,7 +125,7 @@ const Navbar = () => {
                     <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
                         {navItems}
                     </ul>
-                    <div className="hidden lg:block border rounded-3xl px-2 border-green-600 border-b-4 cursor-pointer border-t-2"><span className='flex items-center justify-center text-sm text-white'>whatsApp <FiPhoneCall className="w-4 h-4  border  rounded-full ml-1 " /></span> </div>
+                    <div className="hidden lg:block border rounded-3xl px-2 border-green-600  cursor-pointer "><span className='flex items-center justify-center text-sm text-white'>WhatsApp <FiPhoneCall className="w-4 h-4  border  border-green-600  rounded-full ml-1 " /></span> </div>
                 </nav>
                 <div
                     className={`navbar-menu relative z-50  ${isMenuOpen ? '' : 'hidden'}`}

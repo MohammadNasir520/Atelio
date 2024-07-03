@@ -1,24 +1,28 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+
+
+import asifZaman from "/images/Asif Zaman-01.png"
+import tasnimSultana from "/images/Tasnim-01.png"
+import souravHalder from "/images/pic-removebg-preview.png"
 
 const TeamMemberCard = () => {
 
     const data = [
         {
-            image: "/images/Asif Zaman-01.png",
+            image: asifZaman,
             name: "MD ASIF ZAMAN",
             designation: "Creative Director",
             description: "Hi, I’m Asif! I lead our team’s strategic planning and creative direction. I’m passionate about developing concepts, crafting moodboards, and designing logos that perfectly capture your brand’s essence."
         },
         {
-            image: "/images/Tasnim-01.png",
+            image: tasnimSultana,
             name: "TASNIM SULTANA",
             designation: "Brand Architect",
             description: "Hello, I’m Tasnim. I specialize in shaping your brand’s identity. My job is to develop comprehensive brand guidelines and visual identities that ensure your brand looks cohesive and professional across all platforms."
         },
         {
-            image: "/images/pic-removebg-preview.png",
+            image: souravHalder,
             name: "SAURAV HALDER",
             designation: "Visual Storyteer",
             description: "Hey there, I’m Saurav. I bring your brand to life through engaging digital content. Whether it's creating eye-catching social media posts or designing website banners, I make sure your online presence is impactful and memorable."

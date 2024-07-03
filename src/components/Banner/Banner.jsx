@@ -6,22 +6,25 @@ import "../Style.Css/Style.css"
 const Banner = () => {
     return (
         <div
-            className='absolute top-0 right-0 left-0 bg-black'
-            style={{ backgroundImage: 'url(/images/bgImg.png)', backgroundSize: '750px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'right center', objectFit: "cover", }}
+            className=' mt-[-65px] bg-black'
+            style={{ backgroundImage: 'url(/images/bgImg4.png)', backgroundSize: '950px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'right -190px center', objectFit: "cover", }}
         >
 
 
-            <div className='h-[550px] flex items-center' >
+            <div className='h-screen flex items-center' >
 
                 <div className=' lg:w-2/6 lg:ml-32 px-4 text-white h-[300px]'>
                     <h1 className='bricolage-grotesque-baseTextFont  font-thin'>WE THINK</h1>
                     <h1 className='bricolage-grotesque-baseTextFont  font-bold'>OUTSIDE THE BOX</h1>
                     <h1 className='bricolage-grotesque-baseTextFont  font-thin'>FOR CREATIVE</h1>
                     <h1 className='bricolage-grotesque-baseTextFont  font-bold'>SOLUTIONS</h1>
-                    <Button>View Solutions</Button>
+                    <div className='mt-4'>
+                        <Button>View Solutions</Button>
+                    </div>
                 </div>
 
             </div>
+
         </div>
     );
 };

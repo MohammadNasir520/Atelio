@@ -4,6 +4,9 @@ import Button from '../../components/ui/Button';
 import "./TeamPageBanner.css"
 import "../../components/Style.Css/Style.css"
 
+import teamBannerImage from "/images/teamBgImg.png"
+
+
 
 
 const TeamBanner = () => {
@@ -11,7 +14,7 @@ const TeamBanner = () => {
         <div
             className='Team-banner  lg:absolute top-0 right-0 left-0 bg-black lg:px-14 '
             style={{
-                backgroundImage: 'url(/images/teamBgImg.png)',
+                backgroundImage: `url(${teamBannerImage})`,
 
                 backgroundRepeat: 'no-repeat',
                 objectFit: "cover",

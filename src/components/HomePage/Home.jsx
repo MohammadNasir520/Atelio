@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <div className='mt-[550px]'>
+            <div className=' '>
                 <Brands></Brands>
                 <DetailCount></DetailCount>
                 <Service hashLink={"/work#recent-work"}></Service>
