@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../../components/Style.Css/Style.css"
 
 const RecentWorks = ({ data }) => {
     const [selectedProduct, setSelectedProduct] = useState(null);
@@ -11,9 +12,9 @@ const RecentWorks = ({ data }) => {
 
     const getClassNameForIndex = (index) => {
         if (index % 6 === 0 || index % 6 === 2 || index % 6 === 3) {
-            return "row-span-2 w-full sm:w-[300px] mx-auto my-2 cursor-pointer";
+            return "row-span-2 w-full sm:w-[300px] h-[350px] mx-auto my-2 cursor-pointer";
         } else {
-            return "row-span-1 w-full sm:w-[300px] mx-auto my-2 cursor-pointer";
+            return "row-span-1 w-full sm:w-[300px] h-[150px] mx-auto my-2 cursor-pointer";
         }
     };
 
@@ -30,12 +31,12 @@ const RecentWorks = ({ data }) => {
     return (
         <div id="recent-work" className="my-7">
             <div className="text-center">
-                <h1>take a look at</h1>
-                <h1 className="font-bold">Our Recent Works</h1>
+                <h1 className='fontFranklin text-gray-400'>take a look at</h1>
+                <h1 className="text-xl font-bold">Our Recent Works</h1>
             </div>
 
             {groups.map((group, groupIndex) => (
-                <div key={groupIndex} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 grid-rows-3 lg:px-32">
+                <div key={groupIndex} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 grid-rows-2 lg:px-28 my-16">
                     {group.map((product, i) => (
                         <React.Fragment key={i}>
                             <div
@@ -51,15 +52,15 @@ const RecentWorks = ({ data }) => {
                         </React.Fragment>
                     ))}
                     {selectedProduct && Math.floor(selectedIndex / 6) === groupIndex && (
-                        <div className="col-span-1 sm:col-span-2 lg:col-span-3 w-full lg:w-2/4 mx-auto my-5 h-[600px] border">
+                        <div className="col-span-1 sm:col-span-2 lg:col-span-3 w-full lg:w-2/4 mx-auto my-5 h-[450px] border">
                             <img
                                 src={selectedProduct.image}
-                                className="h-[450px] w-full object-cover"
+                                className="h-[350px] w-full object-cover"
                                 alt={selectedProduct.title || "Selected Product Image"}
                             />
                             <h1 className="text-center font-bold my-2">{selectedProduct.title || "Product Title"}</h1>
                             <p className="text-center">
-                                {selectedProduct.description || "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, incidunt. Delectus assumenda quis nam odio eveniet laudantium possimus expedita repellendus in vel dolorum labore, quia perferendis fugit sit pariatur? Quisquam voluptatum quam, "}
+                                {selectedProduct.description || "Lorem ipsum dolor  adipisicing elit. Nulla, incidunt. Delectus assumenda quis nam odio eveniet laudantium possimus expedita repellendus in vel dolorum labore, quia perferendis fugit sit pariatur? Quisquam voluptatum quam, "}
                             </p>
                         </div>
                     )}
