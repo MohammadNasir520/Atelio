@@ -38,7 +38,7 @@ const BrainsBehind = () => {
                                 <div
                                     key={i}
                                     style={{ backgroundImage: 'url(/images/bgshape.svg)', backgroundSize: '440px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', objectFit: "cover", }}
-                                    className='w-44 flex justify-center'
+                                    className='lg:w-44 flex justify-center'
                                 >
                                     <img src={datum?.image} className='h-40 w-40' alt="" />
                                 </div>

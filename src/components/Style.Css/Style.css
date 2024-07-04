@@ -16,6 +16,17 @@
   font-variation-settings: "wdth" 100;
 }
 
+@media (max-width: 786px) {
+  .bricolage-grotesque-baseTextFont {
+    font-size: 30px;
+  }
+}
+@media (min-width: 787px) and (max-width: 787px) {
+  .bricolage-grotesque-baseTextFont {
+    font-size: 38px;
+  }
+}
+
 .fontFranklin {
   font-family: "FranklinNotes";
   font-weight: 50;

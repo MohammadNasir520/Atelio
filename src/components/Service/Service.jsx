@@ -51,7 +51,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
             <div className='grid lg:grid-cols-3 mx-auto lg:px-12 '>
                 {
                     Categories?.map((category, i) => {
-                        return <div key={i} className='h-[300px] w-[450px] mx-auto flex items-center flex-col m'>
+                        return <div key={i} className='h-[300px] w-full lg:w-[450px] mx-auto flex items-center flex-col m'>
                             <div>
 
 

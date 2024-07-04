@@ -36,7 +36,7 @@ const ContactForm = () => {
             <form
                 ref={form}
                 onSubmit={handleSubmit(onSubmit)}
-                className='lg:w-3/4 mx-auto text-white space-y-8'
+                className='px-1 lg:w-3/4 mx-auto text-white space-y-8'
 
                 style={
                     {

@@ -38,8 +38,8 @@ const Reviews = () => {
                 <div className='lg:flex gap-20  '>
 
                     {data.map((datum, index) => (
-                        <div key={index} className={`${index === 1 ? "lg:top-0  lg:-mt-10  lg:mb-10" : "lg:top-0 lg:mt-24 "}  mt-20 mb-2 `}>
-                            <div className=' lg:space-y-0  relative mx-8 '>
+                        <div key={index} className={`${index === 1 ? "lg:top-0  lg:-mt-10  lg:mb-10" : "lg:top-0 lg:mt-24 "}  mt-20 mb-2 flex justify-center `}>
+                            <div className=' lg:space-y-0  relative '>
                                 <div className='h-16 lg:w-3/4 bg-white flex px-3 items-center rounded-full border-fuchsia-500 border absolute top-[-40px] left-[25px]'>
                                     <div className='flex gap-3'>
                                         <div className='flex justify-center items-center'>

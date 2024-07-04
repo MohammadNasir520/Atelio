@@ -12,7 +12,7 @@ import teamBannerImage from "/images/teamBg3.png"
 const TeamBanner = () => {
     return (
         <div
-            className='Team-banner mt-[-65px] lg:py-5 bg-black lg:px-14 '
+            className='Team-banner mt-[-65px] lg:py-5 bg-black px-2  lg:px-14 '
             style={{
                 backgroundImage: `url(${teamBannerImage})`,
 

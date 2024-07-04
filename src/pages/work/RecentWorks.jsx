@@ -52,10 +52,10 @@ const RecentWorks = ({ data }) => {
                         </React.Fragment>
                     ))}
                     {selectedProduct && Math.floor(selectedIndex / 6) === groupIndex && (
-                        <div className="col-span-1 sm:col-span-2 lg:col-span-3 w-full lg:w-2/4 mx-auto my-5 h-[450px] border">
+                        <div className="col-span-1 sm:col-span-2 lg:col-span-3 lg:w-3/4   mx-auto my-5 h-[700px] border">
                             <img
                                 src={selectedProduct.image}
-                                className="h-[350px] w-full object-cover"
+                                className="h-3/4 w-full  mx-auto"
                                 alt={selectedProduct.title || "Selected Product Image"}
                             />
                             <h1 className="text-center font-bold my-2">{selectedProduct.title || "Product Title"}</h1>
