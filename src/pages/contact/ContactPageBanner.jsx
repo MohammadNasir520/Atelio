@@ -19,11 +19,11 @@ const ContactBanner = () => {
         >
 
 
-            <div className='h-screen lg:flex items-center justify-center lg:px-28' >
+            <div className='h-screen flex items-center justify-center lg:px-28' >
 
                 <div className=' lg:w-5/6  pl-4 text-white '>
                     <h1 className='fontFranklin  font-thin'>Feel Free To Contact Us</h1>
-                    <h1 className='bricolage-grotesque-baseTextFont  font-bold !text-6xl !leading-snug'>We're Here For <br></br>Your Solutions</h1>
+                    <h1 className='bricolage-grotesque-baseTextFont fontsize !font-bold  !leading-snug'>We're Here For <br></br>Your Solutions</h1>
 
                     <div className='mt-7'>
                         <Button hashLink={"/contact#contactForm"}><h1 className='text-sm'>Send us a message</h1></Button>

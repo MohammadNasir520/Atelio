@@ -1,11 +1,17 @@
 .contact-banner {
   background-position: center;
-  background-size: 200px auto;
+  background-size: 400px auto;
+}
+.fontsize {
+  font-size: 40px !important;
 }
 
 @media (min-width: 1024px) {
   .contact-banner {
     background-position: 650px 100px;
-    background-size: 550px auto;
+    background-size: 530px auto;
+  }
+  .fontsize {
+    font-size: 65px !important;
   }
 }
