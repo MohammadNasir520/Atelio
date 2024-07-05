@@ -119,11 +119,13 @@ const ServicePage = () => {
             <div className=''>
                 <Brands></Brands>
 
-                {
-                    data?.map((datum, i) => {
-                        return <div key={i}>  <SingleServiceCand datum={datum} index={i}></SingleServiceCand></div>
-                    })
-                }
+                <div >
+                    {
+                        data?.map((datum, i) => {
+                            return <div key={i}>  <SingleServiceCand datum={datum} index={i}></SingleServiceCand></div>
+                        })
+                    }
+                </div>
 
             </div>
 

@@ -3,7 +3,7 @@ import React from 'react';
 const SingleServiceCard = ({ datum, index }) => {
     const { title1, title2, description, services, image } = datum
     return (
-        <div className={`lg:flex lg:h-[500px] ${index % 2 == 0 ? "bg-black text-white" : "bg-white text-black flex-row-reverse"}  items-center justify-center lg:px-20 py-6`}
+        <div className={`lg:flex lg:h-[500px] ${index % 2 == 0 ? "bg-black text-white" : "bg-white text-black flex-row-reverse"}  items-center justify-center lg:px-20 py-6 px-3`}
             style={{
                 backgroundImage: `url("${datum?.bgImg}")`,
                 backgroundSize: "300px auto",

@@ -8,7 +8,7 @@ import "./WorkPageBanner.css"
 const WorkBanner = () => {
     return (
         <div
-            className='work-banner min-h-screen  mt-[-65px] lg:py-5   bg-black  flex items-center '
+            className='work-banner lg:min-h-screen  mt-[-65px] p-0 lg:py-5   bg-black  flex items-center '
             style={{
                 backgroundImage: 'url(/images/workBgImg1.jpg)',
 
@@ -19,7 +19,7 @@ const WorkBanner = () => {
         >
 
 
-            <div className='h-screen flex items-center' >
+            <div className='h-[450px] lg:h-screen flex items-center' >
 
                 <div className=' lg:w-5/6 lg:ml-32 px-4 text-white '>
                     <h1 className='fontFranklin'>It’s a Place</h1>

@@ -46,12 +46,12 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
         <div className='my-9 bg-white'>
             <div className='w-full'>
 
-                <Title boldText={"Services"} smallText={" We Oer"}></Title>
+                <Title boldText={"Services"} smallText={" We Offer"}></Title>
             </div>
-            <div className='grid lg:grid-cols-3 mx-auto lg:px-12 '>
+            <div className='grid  lg:grid-cols-3 mx-auto px-3 lg:px-12 '>
                 {
                     Categories?.map((category, i) => {
-                        return <div key={i} className='h-[300px] w-full lg:w-[450px] mx-auto flex items-center flex-col m'>
+                        return <div key={i} className='h-[300px] w-full lg:w-[450px] mx-auto flex items-center flex-col '>
                             <div>
 
 
@@ -63,7 +63,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
 
                                 </img>
                                 <div onClick={() => setCategory(category?.category)} className=''>
-                                    <h1 className='my-t font-bold text-2xl'>{category?.title}</h1>
+                                    <h1 className=' font-bold text-2xl'>{category?.title}</h1>
 
 
                                     <Button btnFunction={btnFunction} hashLink={hashLink} bgColor={i > 2 && "bg-green-600"}>view All</Button>
