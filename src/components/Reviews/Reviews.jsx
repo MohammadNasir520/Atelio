@@ -2,28 +2,53 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./Reviews.css"
 
 const Reviews = () => {
     const data = [
         {
             name: "Jane Doe",
             designation: "CEO",
-            description: "11111  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip  Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            description: "11111 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
         },
         {
             name: "Jane Doe",
             designation: "CEO",
-            description: "22222 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip  Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            description: "22222 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
         },
         {
             name: "Jane Doe",
             designation: "CEO",
-            description: "33333  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip  Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            description: "4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            name: "Jane Doe",
+            designation: "CEO",
+            description: "5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            name: "Jane Doe",
+            designation: "CEO",
+            description: "6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            name: "Jane Doe",
+            designation: "CEO",
+            description: "7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            name: "Jane Doe",
+            designation: "CEO",
+            description: "8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            name: "Jane Doe",
+            designation: "CEO",
+            description: "9 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
         },
     ];
 
     const settings = {
-
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -32,11 +57,12 @@ const Reviews = () => {
         autoplaySpeed: 3000,
         arrows: false,
 
+        centerPadding: '0',
     };
 
     return (
         <div
-            className='py-5 lg:pt-10 bg-black'
+            className='py-8 lg:pt-10 bg-black '
             style={{
                 backgroundImage: 'url(/images/reviewBg.png)',
                 backgroundSize: '600px auto',
@@ -53,8 +79,11 @@ const Reviews = () => {
                 <div className='lg:w-3/4'>
                     <Slider {...settings}>
                         {data.map((datum, index) => (
-                            <div key={index} className='py-12'>
-                                <div className='lg:space-y-0 relative '>
+                            <div
+                                key={index}
+                                className={`py-24 ${index % 2 === 0 ? 'focus-slide' : ''}`}
+                            >
+                                <div className='lg:space-y-0 relative'>
                                     <div className='h-16 w-[200px] bg-white flex px-3 items-center rounded-full border-fuchsia-500 border absolute top-[-40px] left-[25px]'>
                                         <div className='flex gap-3'>
                                             <div className='flex justify-center items-center'>
