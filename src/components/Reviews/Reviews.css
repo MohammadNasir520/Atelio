@@ -1,4 +1,21 @@
-.focus-slide {
+/* Reviews.css */
+/* .focus-slide {
+  transition: transform 0.3s ease;
+} */
+
+.slick-slide {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.slick-center {
+  opacity: 1 !important;
   transform: translateY(-50px);
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .slick-slide {
+    opacity: 1;
+  }
 }
