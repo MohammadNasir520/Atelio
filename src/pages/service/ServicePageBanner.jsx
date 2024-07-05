@@ -25,12 +25,14 @@ const ServiceBanner = () => {
                 <div className='  text-white h-[300px] flex justify-center items-center flex-col'>
                     <h1 className='bricolage-grotesque-baseTextFont   !font-thin !leading-normal'>We Craf<span className='font-bold' >t Solutions </span><br></br>
 
-                        Tha <span className='font-bold'>t Create Long-lasting <br></br>
+                        Tha<span className='font-bold'>t Create Long-lasting <br></br>
 
                             Growth </span> For Brands</h1>
 
 
-                    <Button>View Solutions</Button>
+                    <div className='mt-7'>
+                        <Button>View Solutions</Button>
+                    </div>
                 </div>
 
             </div>

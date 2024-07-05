@@ -42,7 +42,7 @@ const Brands = () => {
     return (
         <div className='mb-12 '>
             <div className='mb-12'>
-                <Title boldText={"Trusted by 100+ Brands"} smallText={"A Over the World"}></Title>
+                <Title boldText={"Trusted by 100+ Brands"} smallText={"All Over the World"}></Title>
                 <Marquee pauseOnHover direction='left'>
 
                     {images?.map((image, i) => {
