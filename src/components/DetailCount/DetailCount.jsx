@@ -30,7 +30,7 @@ const DetailCount = () => {
             <div className='w-full mx-auto grid grid-cols-2 gap-7 lg:flex justify-around' >
                 {
                     information?.map((info, i) => {
-                        return <div className='lg:h-48 lg:w-40 bg-white space-y-20 pt-2 mt-2 lg:mt-0 px-3 '>
+                        return <div className='lg:h-48 lg:w-48 bg-white space-y-20 pt-2 mt-2 lg:mt-0 px-3 '>
                             <h1 className='  text-base'>{info.title}</h1>
                             <h1 className='bricolage-grotesque-baseTextFont  font-bold '>{info.number}</h1>
                         </div>

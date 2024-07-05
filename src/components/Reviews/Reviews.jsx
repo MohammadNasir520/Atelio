@@ -7,39 +7,76 @@ import "./Reviews.css";
 const Reviews = () => {
     const data = [
         {
-            name: "Jane Doe",
-            designation: "CEO",
-            description: "11111 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            name: "Barrientos",
+            image: "/images/ClientsFeedback/Barrientos - United Kingdom.jpg",
+            designation: "UK",
+            description: "An absolute pleasure to work with! The visual identity design exceeded our expectations and truly represents our brand's identity"
         },
         {
-            name: "Jane Doe",
-            designation: "CEO",
-            description: "22222 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            name: "Casey Sheehan",
+            image: "/images/ClientsFeedback/Casey Sheehan - US.jpg",
+            designation: "USA",
+            description: "Creative, professional, and timely. The social media kits you designed have significantly boosted our online presence."
         },
         {
-            name: "Jane Doe",
-            designation: "CEO",
-            description: "22222 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            name: "Claudio Montanar",
+            image: "/images/ClientsFeedback/Claudio Montanar - Argentina.jpg",
+            designation: "Argentina",
+            description: "Exceptional packaging designs! Our products now stand out on the shelves, and we've seen a notable increase in sales"
         },
         {
-            name: "Jane Doe",
-            designation: "CEO",
-            description: "22222 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            name: "Juan Varela",
+            image: "/images/ClientsFeedback/Juan Varela - Panama.jpg",
+            designation: "Panama",
+            description: " Fantastic work! From the logo to the social media graphics, everything was delivered perfectly and on time. Highly recommended."
         },
         {
-            name: "Jane Doe",
-            designation: "CEO",
-            description: "22222 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            name: "Justinepotter",
+            image: "/images/ClientsFeedback/Justinepotter - United States.jpg",
+            designation: "USA",
+            description: "Your designs have transformed our brand image. The visual identity designs are top-notch."
         },
         {
-            name: "Jane Doe",
-            designation: "CEO",
-            description: "22222 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            name: "Kevinyuenhk",
+            image: "/images/ClientsFeedback/Kevinyuenhk - Hong Kong.jpg",
+            designation: "Hong Kong",
+            description: "Outstanding creativity and professionalism. The brand elements you created have given our business a fresh, modern look."
         },
         {
-            name: "Jane Doe",
-            designation: "CEO",
-            description: "22222 Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora aut velit assumenda quos fuga blanditiis deleniti quisquam nobis itaque adip Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            name: "Kirklan",
+            image: "/images/ClientsFeedback/Kirklan - United States.jpg",
+            designation: "USA",
+            description: "Impressive work! The branding materials are sleek and elegant, perfectly reflecting our brand's luxury image."
+        },
+        {
+            name: "Md. Rifat Mia",
+            image: "/images/ClientsFeedback/Md. Rifat Mia - Bangladesh.jpg",
+            designation: "Bangladesh",
+            description: "Brilliant designer! The logo and packaging have been a hit with our customers. Thank you!"
+        },
+        {
+            name: "Miriam",
+            image: "/images/ClientsFeedback/Miriam - US.jpg",
+            designation: "USA",
+            description: "Superb design skills. Our new logo and brand materials are exactly what we needed to revamp our brand"
+        },
+        {
+            name: "Mueej",
+            image: "/images/ClientsFeedback/Mueej - Canada.png.jpg",
+            designation: "Canada",
+            description: "Absolutely delighted with the logo, packaging and social media kits. Your designs have given our brand a unique and vibrant identity"
+        },
+        {
+            name: "Pedrighno",
+            image: "/images/ClientsFeedback/Pedrighno - Switzerland.jpg",
+            designation: "Switzerland",
+            description: "Professional and creative. The branding package you provided is excellent and has really helped our marketing efforts."
+        },
+        {
+            name: "Victoria",
+            image: "/images/ClientsFeedback/Victoria - US.jpg",
+            designation: "USA",
+            description: "Top-quality work! The new brand design is fantastic, and we've received great feedback from our customers."
         },
         // Add more reviews as needed
     ];
@@ -52,6 +89,7 @@ const Reviews = () => {
         autoplaySpeed: 3000,
         arrows: false,
         centerMode: true,
+
 
         responsive: [
             {
@@ -107,12 +145,12 @@ const Reviews = () => {
                                 className={`lg:py-24 py-24`}
                             >
                                 <div className='lg:space-y-0 relative'>
-                                    <div className='h-16 w-[200px] bg-white flex px-3 items-center rounded-full border-fuchsia-500 border absolute top-[-40px] left-[25px]'>
+                                    <div className='h-16 w-[220px] bg-white flex px-3 items-center rounded-full border-fuchsia-500 border absolute top-[-40px] left-[20px]'>
                                         <div className='flex gap-3'>
                                             <div className='flex justify-center items-center'>
                                                 <img
-                                                    src='/images/bgImg.png'
-                                                    className='h-12 w-12 rounded-full'
+                                                    src={datum?.image}
+                                                    className='h-12 w-12 rounded-full object-cover'
                                                     alt='img'
                                                 />
                                             </div>
@@ -122,7 +160,7 @@ const Reviews = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='h-[18rem] w-[15rem] bg-white flex justify-center pt-8 px-5 text-justify rounded-[40px] border-fuchsia-500 border'>
+                                    <div className='h-[18rem] w-[16rem] bg-white flex justify-center pt-8 px-5 text-justify rounded-[40px] border-fuchsia-500 border'>
                                         {datum.description}
                                     </div>
                                 </div>

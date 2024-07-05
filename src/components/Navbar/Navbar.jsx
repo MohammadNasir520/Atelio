@@ -166,7 +166,7 @@ const Navbar = () => {
 
                                 {navItems}
                             </ul>
-                            <div className=" lg:hidden border rounded-3xl px-2 py-[2px] border-green-600  cursor-pointer "><span className='flex items-center justify-center text-sm text-white'>WhatsApp <span className='ml-1 border  border-green-600  rounded-full flex justify-center items-center'><FiPhoneCall className="w-3 h-3 m-[2px]  " /></span> </span> </div>
+                            <div className=" lg:hidden w-28 border rounded-3xl px-2 py-[2px] border-green-600  cursor-pointer "><span className='flex items-center justify-center text-sm text-white'>WhatsApp <span className='ml-1 border  border-green-600  rounded-full flex justify-center items-center'><FiPhoneCall className="w-3 h-3 m-[2px]  " /></span> </span> </div>
                         </div>
                         <div className="mt-auto">
                             <div className="pt-6">
