@@ -4,7 +4,7 @@ const DetailCount = () => {
 
     const information = [
         {
-            title: "years of service",
+            title: "Years Of Service",
             number: "4+"
         },
         {

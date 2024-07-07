@@ -131,12 +131,12 @@ const Reviews = () => {
                 backgroundPosition: 'center',
             }}
         >
-            <h1 className='text-white text-center space-y-3'>
+            <h1 className='text-white text-center space-y-3 mb-4 lg:mr-3 '>
                 <span className='font-bold smallHeadingFont'>What They Say </span>
                 <span className='fontFranklin text-gray-400 '>About Us</span>
             </h1>
 
-            <div className='lg:h-[600px] flex justify-center items-center'>
+            <div className='lg:h-[600px] flex justify-center items-center lg:ml-16'>
                 <div className='lg:w-3/4 w-full'>
                     <Slider {...settings}>
                         {data.map((datum, index) => (
@@ -160,7 +160,7 @@ const Reviews = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='h-[18rem] w-[16rem] bg-white flex justify-center pt-8 px-5 text-justify rounded-[40px] border-fuchsia-500 border'>
+                                    <div className='h-[18rem] w-[16rem] bg-white  pt-8 px-5 text-justify  rounded-[40px] border-fuchsia-500 border'>
                                         {datum.description}
                                     </div>
                                 </div>

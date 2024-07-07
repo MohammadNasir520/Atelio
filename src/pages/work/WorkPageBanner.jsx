@@ -19,15 +19,15 @@ const WorkBanner = () => {
         >
 
 
-            <div className='h-[600px] lg:h-screen flex items-center' >
+            <div className='h-[500px] lg:h-screen flex items-center' >
 
                 <div className=' lg:w-5/6 lg:ml-32 px-4 text-white '>
                     <h1 className='fontFranklin'>It’s a Place</h1>
-                    <h1 className='bricolage-grotesque-baseTextFont  font-bold'>WHERE WE PRIDE <br />
+                    <h1 className='smallHeadingFont text-2xl  lg:text-5xl  font-bold lg:mt-5'>WHERE WE PRIDE  </h1>
+                    <h1 className='smallHeadingFont text-2xl  lg:text-5xl  font-bold lg:mt-5'>  OURSELVES ON PROVIDING
 
-                        OURSELVES ON PROVIDING <br />
-
-                        CREATIVE SOLUTIONS</h1>
+                    </h1>
+                    <h1 className='smallHeadingFont text-2xl  lg:text-5xl  font-bold lg:mt-5'> CREATIVE SOLUTIONS  </h1>
 
                     <div className='mt-7'>
                         <Button hashLink={"/service"}>View Services</Button>

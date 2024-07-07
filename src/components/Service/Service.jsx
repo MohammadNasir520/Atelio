@@ -48,15 +48,15 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
 
                 <Title boldText={"Services"} smallText={" We Offer"}></Title>
             </div>
-            <div className='grid  lg:grid-cols-3 mx-auto px-3 lg:px-12 '>
+            <div className='grid  lg:grid-cols-3 mx-auto px-3 '>
                 {
                     Categories?.map((category, i) => {
-                        return <div key={i} className='h-[300px] w-full lg:w-[450px] mx-auto flex items-center flex-col '>
-                            <div>
+                        return <div key={i} className='h-[300px] w-full lg:w-[450px]   flex items-center flex-col '>
+                            <div className='lg:w-[320px] ' >
 
 
                                 <img
-                                    className='h-[200px] w-full'
+                                    className='h-[210px] w-full'
                                     src={category?.image}
 
                                     alt='serviceImg'>

@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import "../../components/Style.Css/Style.css"
 
 const RecentWorks = ({ data }) => {
+    console.log(data)
     const [selectedProduct, setSelectedProduct] = useState(null);
+    console.log(selectedProduct)
     const [selectedIndex, setSelectedIndex] = useState(null);
 
     const handleClick = (product, index) => {
@@ -31,8 +33,8 @@ const RecentWorks = ({ data }) => {
     return (
         <div id="recent-work" className="my-7">
             <div className="text-center">
-                <h1 className='fontFranklin text-gray-400'>take a look at</h1>
-                <h1 className="text-xl font-bold">Our Recent Works</h1>
+                <h1 className='fontFranklin lg:text-xl text-gray-400'>take a look at</h1>
+                <h1 className="text-2xl lg:text-3xl font-bold">Our Recent Works</h1>
             </div>
 
             {groups.map((group, groupIndex) => (
