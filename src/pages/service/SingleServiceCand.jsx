@@ -3,7 +3,7 @@ import React from 'react';
 const SingleServiceCard = ({ datum, index }) => {
     const { title1, title2, description, services, image } = datum
     return (
-        <div className={`lg:flex lg:h-[500px] ${index % 2 == 0 ? "bg-black text-white" : "bg-white text-black flex-row-reverse"}  items-center justify-center lg:px-20 py-6 px-3`}
+        <div className={`lg:flex lg:h-[500px] ${index % 2 == 0 ? "bg-black text-white" : "bg-white text-black flex-row-reverse"}  items-center justify-center lg:px-16 py-6 px-3`}
             style={{
                 backgroundImage: `url("${datum?.bgImg}")`,
                 backgroundSize: "300px auto",
@@ -11,13 +11,13 @@ const SingleServiceCard = ({ datum, index }) => {
                 backgroundRepeat: "no-repeat"
             }}
         >
-            <div className='flex justify-center items-center lg:w-2/5'>
+            <div className='flex justify-center items-center lg:w-5/12'>
                 <img
                     src={image}
-                    className='lg:h-60 lg:w-80'
+                    className='lg:h-72 lg:w-[420px]'
                     alt="" />
             </div>
-            <div className='lg:w-3/5 space-y-5'>
+            <div className='lg:w-7/12 space-y-5'>
                 <div>
                     <h1 className='bricolage-grotesque-baseTextFont'>{title1}</h1>
                     <p className='text-base'>{description}</p>
