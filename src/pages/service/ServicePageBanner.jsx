@@ -20,9 +20,9 @@ const ServiceBanner = () => {
         >
 
 
-            <div className='lg:h-[650px] lg:flex justify-center text-center  items-center' >
+            <div className='h-[600px] lg:h-[650px] lg:flex justify-center text-center  items-center' >
 
-                <div className='  text-white h-[300px] flex justify-center items-center flex-col'>
+                <div className='  text-white h-full flex justify-center items-center flex-col'>
                     <h1 className='bricolage-grotesque-baseTextFont   !font-thin !leading-normal'>We Craf<span className='font-bold' >t Solutions </span><br></br>
 
                         Tha<span className='font-bold'>t Create Long-lasting <br></br>

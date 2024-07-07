@@ -19,7 +19,7 @@ const WorkBanner = () => {
         >
 
 
-            <div className='h-[450px] lg:h-screen flex items-center' >
+            <div className='h-[600px] lg:h-screen flex items-center' >
 
                 <div className=' lg:w-5/6 lg:ml-32 px-4 text-white '>
                     <h1 className='fontFranklin'>It’s a Place</h1>

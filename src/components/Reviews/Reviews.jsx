@@ -132,7 +132,7 @@ const Reviews = () => {
             }}
         >
             <h1 className='text-white text-center space-y-3'>
-                <span className='font-bold'>What They Say </span>
+                <span className='font-bold smallHeadingFont'>What They Say </span>
                 <span className='fontFranklin text-gray-400 '>About Us</span>
             </h1>
 

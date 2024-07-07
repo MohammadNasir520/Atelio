@@ -1,3 +1,13 @@
 .footeropacity {
   opacity: 0.98;
 }
+
+.footerBg {
+  background-size: 440px auto;
+}
+
+@media (min-width: 786px) {
+  .footerBg {
+    background-size: 540px auto;
+  }
+}

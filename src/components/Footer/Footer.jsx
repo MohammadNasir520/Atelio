@@ -5,13 +5,14 @@ import "./Footer.css"
 
 const Footer = () => {
     return (
-        <div className='relative py-20 footeropacity'>
+        <div className='relative py-20  footeropacity '>
 
 
             <div
+                className='footerBg'
                 style={{
                     backgroundImage: 'url(/images/AtelioLogo.png)',
-                    backgroundSize: '440px auto',
+                    // backgroundSize: '440px auto',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     position: 'absolute',
@@ -57,7 +58,7 @@ const Footer = () => {
                     <Link to={"/contact"}>Contact</Link>
                 </div>
             </div>
-            <hr className='hidden lg:block text-white mt-2 font-bold text-2xl' />
+            <hr className='block text-white mt-2 font-bold text-2xl' />
         </div>
     );
 };
