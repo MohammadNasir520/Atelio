@@ -21,7 +21,7 @@ const WorkBanner = () => {
 
             <div className='h-[500px] lg:h-screen flex items-center' >
 
-                <div className=' lg:w-5/6 lg:ml-32 px-4 text-white '>
+                <div data-aos="fade-up" className=' lg:w-5/6 lg:ml-32 px-4 text-white '>
                     <h1 className='fontFranklin'>It’s a Place</h1>
                     <h1 className='smallHeadingFont text-2xl  lg:text-5xl  font-bold lg:mt-5'>WHERE WE PRIDE  </h1>
                     <h1 className='smallHeadingFont text-2xl  lg:text-5xl  font-bold lg:mt-5'>  OURSELVES ON PROVIDING

@@ -14,7 +14,7 @@ const TeamPage = () => {
                 <TeamMemberCard></TeamMemberCard>
             </div>
 
-            <div className='flex justify-center'>
+            <div data-aos="fade-right" className='flex justify-center'>
                 <Button bgColor={"bg-green-600"} hashLink={'/work'}>View Our Works</Button>
             </div>
             <NeedCreativeSolutionCard></NeedCreativeSolutionCard>

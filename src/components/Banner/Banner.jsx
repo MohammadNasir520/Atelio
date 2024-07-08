@@ -13,7 +13,7 @@ const Banner = () => {
 
             <div className='h-screen flex items-center' >
 
-                <div className=' lg:w-4/6 lg:ml-32 px-4 text-white h-[300px]'>
+                <div data-aos="fade-up" className=' lg:w-4/6 lg:ml-32 px-4 text-white h-[300px]'>
                     <h1 className='bricolage-grotesque-baseTextFont  font-thin'>WE THINK</h1>
                     <h1 className='bricolage-grotesque-baseTextFont  font-bold'>OUTSIDE THE BOX</h1>
                     <h1 className='bricolage-grotesque-baseTextFont  font-thin'>FOR CREATIVE</h1>

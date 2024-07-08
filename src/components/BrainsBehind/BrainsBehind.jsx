@@ -36,6 +36,7 @@ const BrainsBehind = () => {
                         data?.map((datum, i) => {
                             return <div key={i} className='relative mt-5 lg:mt-0 '>
                                 <div
+                                    data-aos={i == 1 ? "zoom-in-up" : "zoom-in-down"}
                                     key={i}
                                     style={{ backgroundImage: 'url(/images/bgshape.svg)', backgroundSize: '440px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', objectFit: "cover", }}
                                     className='lg:w-44 flex justify-center'

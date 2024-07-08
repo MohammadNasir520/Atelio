@@ -32,7 +32,7 @@ const ContactForm = () => {
         console.log('submit==', data)
     }
     return (
-        <div className=''>
+        <div data-aos="fade-up" className=''>
             <form
                 ref={form}
                 onSubmit={handleSubmit(onSubmit)}

@@ -10,20 +10,6 @@ const Brands = () => {
             "image": "/images/Bespoke design/valo-01.jpg"
         },
         {
-            "image": "/images/Bespoke design/valo-01.jpg"
-        },
-        {
-            "image": "/images/Bespoke design/valo-01.jpg"
-        },
-        {
-            "image": "/images/Bespoke design/valo-01.jpg"
-        },
-        {
-            "image": "/images/Bespoke design/valo-01.jpg"
-        },
-
-
-        {
 
             "image": "/images/PRODUCT PACKAGING DESIGN/Product packaging design-06.jpg"
         },
@@ -168,22 +154,6 @@ const Brands = () => {
         },
         {
 
-            "image": "/images/Social Media Posts/real estate 02 eng.jpg"
-        },
-        {
-
-            "image": "/images/Social Media Posts/real estate 02.jpg"
-        },
-        {
-
-            "image": "/images/Social Media Posts/real estate 03 eng.jpg"
-        },
-        {
-
-            "image": "/images/Social Media Posts/real estate 03.jpg"
-        },
-        {
-
             "image": "/images/Social Media Posts/real estate eng.jpg"
         },
         {
@@ -298,7 +268,7 @@ const Brands = () => {
     ]
     return (
         <div className='mb-12 '>
-            <div className='mb-12'>
+            <div data-aos="fade-up" className='mb-12'>
                 <Title boldText={"Trusted by 100+ Brands"} smallText={"All Over the World"}></Title>
                 <Marquee pauseOnHover direction='left'>
 
@@ -309,7 +279,7 @@ const Brands = () => {
                     })}
                 </Marquee>
             </div>
-            <div>
+            <div data-aos="fade-up" >
                 <Marquee pauseOnHover direction='right'>
 
                     {images?.map((image, i) => {

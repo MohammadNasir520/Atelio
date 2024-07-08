@@ -38,13 +38,14 @@ const TeamMemberCard = () => {
                         data?.map((datum, i) => {
                             return <div key={i} className='relative lg:flex items-center  my-10  '>
                                 <div
+                                    data-aos={i == 1 ? "zoom-in-down" : i == 2 ? "zoom-in-left" : "zoom-in-right"}
                                     key={i}
                                     style={{ backgroundImage: 'url(/images/bgshape.svg)', backgroundSize: '650px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', }}
                                     className='lg:w-2/5 flex justify-center'
                                 >
                                     <img src={datum?.image} className='lg:h-80 lg:w-80 mb-16 ml-4 ' alt="" />
                                 </div>
-                                <div className='lg:w-3/5 bottom-3'>
+                                <div data-aos={i == 1 ? "zoom-in-down" : i == 2 ? "zoom-in-left" : "zoom-in-right"} className='lg:w-3/5 bottom-3'>
                                     <h1 className='smallHeadingFont text-3xl   lg:text-4xl'>{datum?.name}</h1>
                                     <h1 className='fontFranklin text-violet-500 text-xl mb-2'>{datum?.designation}</h1>
                                     <p className='text-sm'>{datum?.description}</p>

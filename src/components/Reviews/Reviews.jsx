@@ -131,12 +131,12 @@ const Reviews = () => {
                 backgroundPosition: 'center',
             }}
         >
-            <h1 className='text-white text-center space-y-3 mb-4 lg:mr-3 '>
+            <h1 data-aos="fade-down" className='text-white text-center space-y-3 mb-4 lg:mr-3 '>
                 <span className='font-bold smallHeadingFont'>What They Say </span>
                 <span className='fontFranklin text-gray-400 '>About Us</span>
             </h1>
 
-            <div className='lg:h-[600px] flex justify-center items-center lg:ml-16'>
+            <div data-aos="zoom-in-up" className='lg:h-[600px] flex justify-center items-center lg:ml-16'>
                 <div className='lg:w-3/4 w-full'>
                     <Slider {...settings}>
                         {data.map((datum, index) => (

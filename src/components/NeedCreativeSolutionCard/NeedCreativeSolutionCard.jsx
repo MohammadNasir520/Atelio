@@ -3,7 +3,7 @@ import Button from '../ui/Button';
 
 const NeedCreativeSolutionCard = ({ text }) => {
     return (
-        <div>
+        <div data-aos="fade-up">
             <div className={` flex justify-center items-center flex-col ${text ? "text-black" : "text-white"} space-y-0 py-20`} >
                 <h1 className='fontFranklin'>Do You NEEd Any</h1>
                 <h1 className='bricolage-grotesque-baseTextFont font-bold'>Creative Solution?</h1>

@@ -25,7 +25,7 @@ const TeamBanner = () => {
 
             <div className='h-[650px] flex items-center' >
 
-                <div className=' lg:w-4/6 lg:ml-28  text-white h-[300px]'>
+                <div data-aos="fade-up" className=' lg:w-4/6 lg:ml-28  text-white h-[300px]'>
                     <h1 className='bricolage-grotesque-baseTextFont font-thin '>WE ARE THE <span className='font-bold'> BRAINS <br></br>
 
                         BEHIND</span> YOUR <br></br>
