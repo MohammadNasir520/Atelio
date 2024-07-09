@@ -45,17 +45,18 @@ const RecentWorks = ({ data }) => {
                                 data-aos={i % 6 === 0 ? "zoom-in-down" : i % 6 === 2 ? "zoom-in-up" : "flip-right"}
                                 className={getClassNameForIndex(i)}
                                 onClick={() => handleClick(product, i + groupIndex * 6)}
+
                             >
                                 <img
                                     src={product?.image}
-                                    className="h-full w-full object-cover"
+                                    className="h-full w-full object-cover "
                                     alt={product?.title || "Product Image"}
                                 />
                             </div>
                         </React.Fragment>
                     ))}
                     {selectedProduct && Math.floor(selectedIndex / 6) === groupIndex && (
-                        <div data-aos="fade-left" className="col-span-1 sm:col-span-2 lg:col-span-3 lg:w-3/4   mx-auto my-5 h-[700px] border">
+                        <div data-aos="fade-left" className="col-span-1 sm:col-span-2 lg:col-span-3 lg:w-3/4   mx-auto my-5 h-[700px] border overflow-x-hidden">
                             <img
                                 src={selectedProduct.image}
                                 className="h-3/4 w-full  mx-auto"

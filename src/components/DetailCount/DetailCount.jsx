@@ -34,7 +34,7 @@ const DetailCount = () => {
                         return <div data-aos={i == 1 ? "fade-left" : "fade-right"} key={i} className='lg:h-48 lg:w-48 bg-white space-y-20 pt-2 mt-2 lg:mt-0 px-3 '>
                             <h1 className='  text-base smallHeadingFont font-semibold'>{info.title}</h1>
                             <div className='flex gap-1'>
-                                <CountUp start={0} duration={3} end={info.number} decimal="," className='bricolage-grotesque-baseTextFont  font-bold '>
+                                <CountUp start={0} duration={10} end={info.number} decimal="," className='bricolage-grotesque-baseTextFont  font-bold '>
                                 </CountUp>
                                 <p className='bricolage-grotesque-baseTextFont  font-bold '>{i == 0 && "+"}{i == 2 && "+"}</p>
                             </div>
