@@ -1,23 +1,24 @@
 import React from 'react';
+import CountUp from 'react-countup';
 
 const DetailCount = () => {
 
     const information = [
         {
             title: "Years Of Service",
-            number: "4+"
+            number: 4
         },
         {
             title: "Team Members",
-            number: "3"
+            number: 3
         },
         {
             title: "Happy Client",
-            number: "300+"
+            number: 300
         },
         {
             title: "Locations",
-            number: "2"
+            number: 2
         },
     ]
     return (
@@ -32,7 +33,11 @@ const DetailCount = () => {
                     information?.map((info, i) => {
                         return <div data-aos={i == 1 ? "fade-left" : "fade-right"} key={i} className='lg:h-48 lg:w-48 bg-white space-y-20 pt-2 mt-2 lg:mt-0 px-3 '>
                             <h1 className='  text-base smallHeadingFont font-semibold'>{info.title}</h1>
-                            <h1 className='bricolage-grotesque-baseTextFont  font-bold '>{info.number}</h1>
+                            <div className='flex gap-1'>
+                                <CountUp start={0} duration={3} end={info.number} decimal="," className='bricolage-grotesque-baseTextFont  font-bold '>
+                                </CountUp>
+                                <p className='bricolage-grotesque-baseTextFont  font-bold '>{i == 0 && "+"}{i == 2 && "+"}</p>
+                            </div>
                         </div>
                     })
                 }
