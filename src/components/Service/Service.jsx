@@ -51,7 +51,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
             <div className='grid  lg:grid-cols-3 mx-auto px-3 '>
                 {
                     Categories?.map((category, i) => {
-                        return <div data-aos={i == 1 ? "fade-left" : "fade-right"} key={i} className='h-[300px] w-full lg:w-[450px]   flex items-center flex-col '>
+                        return <div data-aos={i == 1 ? "flip-left" : "flip-right"} key={i} className='h-[300px] w-full lg:w-[450px]   flex items-center flex-col overflow-x-hidden '>
                             <div className='lg:w-[320px] ' >
 
 
@@ -63,7 +63,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
 
                                 </img>
                                 <div onClick={() => setCategory(category?.category)} className=''>
-                                    <h1 className=' font-bold text-2xl'>{category?.title}</h1>
+                                    <h1 data-aos="fade-up" className=' font-bold text-2xl'>{category?.title}</h1>
 
 
                                     <Button btnFunction={btnFunction} hashLink={hashLink} bgColor={i > 2 && "bg-green-600"}>view All</Button>
