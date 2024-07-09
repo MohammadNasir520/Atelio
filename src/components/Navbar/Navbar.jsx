@@ -92,6 +92,10 @@ const Navbar = () => {
         </>
     );
 
+    const redirectToWhatsApp = () => {
+        return window.location.href = "https://wa.me/+8801813813104"
+    }
+
 
     return (
         <div className={`${isScrolled ? "bg-black top-0" : "bg-transparent lg:top-6 "} sticky  inset-0 z-50   mx-auto text-black lg:px-32`}>
@@ -126,7 +130,7 @@ const Navbar = () => {
                     <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
                         {navItems}
                     </ul>
-                    <div className="hidden lg:block border rounded-3xl px-2 py-[2px] border-green-600  cursor-pointer "><span className='flex items-center justify-center text-sm text-white'>WhatsApp <span className='ml-1 border  border-green-600  rounded-full flex justify-center items-center'><FiPhoneCall className="w-3 h-3 m-[2px]  " /></span> </span> </div>
+                    <div onClick={() => redirectToWhatsApp()} className="hidden lg:block border rounded-3xl px-2 py-[2px] border-green-600  cursor-pointer "><span className='flex items-center justify-center text-sm text-white'>WhatsApp <span className='ml-1 border  border-green-600  rounded-full flex justify-center items-center'><FiPhoneCall className="w-3 h-3 m-[2px]  " /></span> </span> </div>
                 </nav>
                 <div
                     className={`navbar-menu relative z-50  ${isMenuOpen ? '' : 'hidden'}`}
@@ -166,7 +170,13 @@ const Navbar = () => {
 
                                 {navItems}
                             </ul>
-                            <div className=" lg:hidden w-28 border rounded-3xl px-2 py-[2px] border-green-600  cursor-pointer "><span className='flex items-center justify-center text-sm text-white'>WhatsApp <span className='ml-1 border  border-green-600  rounded-full flex justify-center items-center'><FiPhoneCall className="w-3 h-3 m-[2px]  " /></span> </span> </div>
+                            <div onClick={() => redirectToWhatsApp()} className=" lg:hidden w-28 border rounded-3xl px-2 py-[2px] border-green-600     cursor-pointer ">
+                                <span className='flex items-center justify-center text-sm text-white'>WhatsApp
+                                    <span className='ml-1 border  border-green-600  rounded-full flex justify-center items-center'>
+                                        <FiPhoneCall className="w-3 h-3 m-[2px]  " />
+                                    </span>
+                                </span>
+                            </div>
                         </div>
                         <div className="mt-auto">
                             <div className="pt-6">
