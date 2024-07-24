@@ -1,13 +1,18 @@
 import React from 'react';
 import Button from '../ui/Button';
 import "../Style.Css/Style.css"
+import "./Banner.css"
 
 
 const Banner = () => {
     return (
         <div
-            className=' mt-[-70px] lg:py-5 bg-black'
-            style={{ backgroundImage: 'url(/images/bgImg4.png)', backgroundSize: '1000px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'right -200px center', objectFit: "cover", }}
+            className='bgImg mt-[-70px] lg:py-5 bg-black'
+            style={{
+                backgroundImage: 'url(/images/bgImg4.png)',
+                backgroundRepeat: 'no-repeat',
+                objectFit: "cover",
+            }}
         >
 
 

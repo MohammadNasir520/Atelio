@@ -1,0 +1,43 @@
+/* Small Screens (19-inch monitors and smaller) */
+@media (max-width: 1440px) {
+  /* Styles for 19-inch monitors and smaller screens */
+  .service-card {
+    width: 320px;
+  }
+  .service-img {
+    height: 210px;
+  }
+}
+
+/* Medium Screens (21-inch monitors) */
+@media (min-width: 1441px) and (max-width: 1757px) {
+  /* Styles for 21-inch monitors */
+  .service-box {
+    padding: 0px 32px;
+  }
+  .service-card {
+    width: 100%;
+  }
+  .service-img {
+    height: 250px;
+  }
+}
+
+/* Large Screens (24-inch monitors) */
+@media (min-width: 1758px) and (max-width: 2006px) {
+  /* Styles for 24-inch monitors */
+  .service-box {
+    padding: 0px 50px;
+  }
+  .service-card {
+    width: 100%;
+  }
+  .service-img {
+    height: 320px;
+  }
+}
+
+/* Extra Large Screens (larger than 24-inch monitors) */
+@media (min-width: 2007px) {
+  /* Styles for screens larger than 24-inch monitors */
+}

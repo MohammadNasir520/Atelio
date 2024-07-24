@@ -6,7 +6,7 @@ import Scroll from '../components/Scroll/Scroll';
 
 const ManiLayout = () => {
     return (
-        <section className='max-w-[1500px] mx-auto'>
+        <section className='max-w-[2006px] mx-auto'>
             <Navbar></Navbar>
             <Scroll></Scroll>
             <Outlet></Outlet>

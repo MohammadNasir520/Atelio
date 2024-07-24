@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../ui/Button';
 import Title from '../ui/Title';
+import "./service.css"
 
 import logosMarks from '/images/Thumbnails/Logo.jpg'
 import packaging from '/images/Thumbnails/packaging.jpg'
@@ -48,15 +49,15 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
 
                 <Title boldText={"Services"} smallText={" We Offer"}></Title>
             </div>
-            <div className='grid  lg:grid-cols-3 mx-auto px-3 overflow-hidden '>
+            <div className='grid  md:grid-cols-2 lg:grid-cols-3 px-3  overflow-hidden  flex items-center justify-center'>
                 {
                     Categories?.map((category, i) => {
-                        return <div data-aos={i == 1 ? "fade-up" : "fade-down"} key={i} className='h-[300px] w-full lg:w-[450px]   flex items-center flex-col overflow-hidden '>
-                            <div className='lg:w-[320px] ' >
+                        return <div data-aos={i == 1 ? "fade-up" : "fade-down"} key={i} className='service-box my-4  w-full   overflow-hidden flex flex-col justify-center items-center'>
+                            <div className=' service-card ' >
 
 
                                 <img
-                                    className='h-[210px] w-full overflow-hidden'
+                                    className='service-img w-full overflow-hidden'
                                     src={category?.image}
 
                                     alt='serviceImg'>
