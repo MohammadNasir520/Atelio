@@ -1,10 +1,18 @@
-/* Small Screens (19-inch monitors and smaller) */
+@media (max-width: 767px) {
+  /* Styles for 19-inch monitors and smaller screens */
+
+  .details-card {
+    height: 145px;
+    width: 150px;
+  }
+}
+
 @media (min-width: 1080px) and (max-width: 1440px) {
   /* Styles for 19-inch monitors and smaller screens */
 
   .details-card {
-    height: 180px;
-    width: 180px;
+    height: 192px;
+    width: 192px;
   }
 }
 
