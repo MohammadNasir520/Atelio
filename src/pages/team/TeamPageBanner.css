@@ -1,11 +1,37 @@
-.Team-banner {
-  background-position: center;
-  background-size: 450px auto;
+@media (max-width: 767px) {
+  .Team-banner {
+    background-position: center;
+    background-size: 450px auto;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+  .Team-banner {
+    background-position: center;
+    background-size: 900px auto;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
   .Team-banner {
     background-position: 660px center;
-    background-size: 600px auto;
+    background-size: 660px auto;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .Team-banner {
+    background-position: 860px center;
+    background-size: 1000px auto;
+  }
+  .bricolage-grotesque-baseTextFont {
+    font-size: 85px;
+  }
+}
+@media (min-width: 1921px) {
+  .Team-banner {
+    background-position: 860px center;
+    background-size: 1200px auto;
+  }
+  .bricolage-grotesque-baseTextFont {
+    font-size: 85px;
   }
 }

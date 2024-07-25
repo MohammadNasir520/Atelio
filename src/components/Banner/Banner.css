@@ -3,12 +3,19 @@
   background-position: center -250px;
 }
 
-/* Medium Screens (1367px to 1920px wide) */
-@media (min-width: 768px) and (max-width: 1440px) {
-  /* Styles for 21-inch monitors and Full HD 24-inch monitors */
+@media (min-width: 768px) and (max-width: 1200px) {
   .bgImg {
     background-size: 1350px auto;
     background-position: center -250px;
+  }
+  .bricolage-grotesque-baseTextFont {
+    font-size: 65px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .bgImg {
+    background-size: 1040px auto;
+    background-position: 540px center;
   }
   .bricolage-grotesque-baseTextFont {
     font-size: 65px;
@@ -33,13 +40,9 @@
   /* Styles for 24-inch monitors */
   .bgImg {
     background-size: 1750px auto;
-    background-position: right -350px center;
+    background-position: right -270px center;
   }
   .bricolage-grotesque-baseTextFont {
     font-size: 85px;
   }
 }
-
-/* Extra Large Screens (larger than 24-inch monitors) */
-/* @media (min-width: 2007px) {
-} */

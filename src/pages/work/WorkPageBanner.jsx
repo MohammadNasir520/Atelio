@@ -8,7 +8,7 @@ import "./WorkPageBanner.css"
 const WorkBanner = () => {
     return (
         <div
-            className='work-banner lg:min-h-screen  mt-[-65px] p-0 lg:py-5   bg-black  flex items-center '
+            className='work-banner h-screen  mt-[-65px] p-0 lg:py-5   bg-black  flex items-center '
             style={{
                 backgroundImage: 'url(/images/workBgImg1.jpg)',
 

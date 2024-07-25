@@ -1,12 +1,32 @@
-.work-banner {
-  background-position: center;
-  background-size: 600px auto;
-  background-position: -70px center;
+@media (max-width: 767px) {
+  .work-banner {
+    background-position: center;
+    background-size: 820px auto;
+    background-position: -120px center;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+  .work-banner {
+    background-position: -120px center;
+    background-size: 1250px auto;
+  }
+  .bricolage-grotesque-baseTextFont {
+    font-size: 55px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
   .work-banner {
     background-position: 600px center;
     background-size: 850px auto;
+  }
+}
+@media (min-width: 1441px) {
+  .work-banner {
+    background-position: 800px center;
+    background-size: 1355px auto;
+  }
+  .bricolage-grotesque-baseTextFont {
+    font-size: 85px;
   }
 }
