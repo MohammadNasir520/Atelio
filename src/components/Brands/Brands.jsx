@@ -1,6 +1,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import Title from '../ui/Title';
+import './brands.css'
 
 const Brands = () => {
 
@@ -267,13 +268,13 @@ const Brands = () => {
 
     ]
     return (
-        <div className='mb-12 '>
+        <div className=' brands-container mb-12 '>
             <div data-aos="fade-up" className='mb-12'>
                 <Title boldText={"Trusted by 100+ Brands"} smallText={"All Over the World"}></Title>
                 <Marquee pauseOnHover direction='left'>
 
                     {images?.map((image, i) => {
-                        return <div key={i} className='h-44 w-64 mx-6' >
+                        return <div key={i} className='card-1 h-44 w-64 mx-6' >
                             <img src={image.image} className='h-full w-full'></img>
                         </div>
                     })}
@@ -283,7 +284,7 @@ const Brands = () => {
                 <Marquee pauseOnHover direction='right'>
 
                     {images?.map((image, i) => {
-                        return <div key={i} className='h-44 w-64 mx-6' >
+                        return <div key={i} className='card-1 h-44 w-64 mx-6' >
                             <img src={image.image} className='h-full w-full'></img>
                         </div>
                     })}

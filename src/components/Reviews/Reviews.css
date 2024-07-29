@@ -14,13 +14,13 @@
     opacity: 1;
   }
 }
-@media (min-width: 1441px) {
+@media (min-width: 1921px) {
   .pic-designation-box {
     height: 80px;
     width: 260px;
     font-size: 20px;
   }
-  .pic {
+  .img {
     height: 55px;
     width: 55px;
   }

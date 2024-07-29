@@ -1,0 +1,19 @@
+@media (max-width: 1440px) {
+  .work-verticallyLarge-img {
+    width: 300px;
+    height: 350px;
+  }
+  .work-verticallySmall-img {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media (min-width: 1441px) {
+  .work-verticallyLarge-img {
+    width: 500px;
+  }
+  .work-verticallySmall-img {
+    width: 500px;
+    height: 250px;
+  }
+}

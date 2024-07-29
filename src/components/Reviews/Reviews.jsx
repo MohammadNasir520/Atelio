@@ -136,7 +136,7 @@ const Reviews = () => {
                 <span className='fontFranklin text-gray-400 '>About Us</span>
             </h1>
 
-            <div data-aos="zoom-in-up" className='lg:h-[600px] flex justify-center items-center lg:ml-16'>
+            <div data-aos="zoom-in-up" className='lg:h-[600px] flex justify-center items-center mx-auto'>
                 <div className='lg:w-3/4 w-full'>
                     <Slider {...settings}>
                         {data.map((datum, index) => (
@@ -150,7 +150,7 @@ const Reviews = () => {
                                             <div className='flex justify-center items-center'>
                                                 <img
                                                     src={datum?.image}
-                                                    className='pic h-12 w-12 rounded-full object-cover'
+                                                    className='img h-12 w-12 rounded-full object-cover'
                                                     alt='img'
                                                 />
                                             </div>

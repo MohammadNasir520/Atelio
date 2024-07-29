@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../ui/Button';
 import { Link } from 'react-router-dom';
 import Title from '../ui/Title';
+import "./BrainsBehind.css"
 
 import asifZaman from "/images/Asif Zaman-01.png"
 import tasnimSultana from "/images/Tasnim-01.png"
@@ -27,7 +28,7 @@ const BrainsBehind = () => {
         },
     ]
     return (
-        <div className='lg:h-[400px] p-8'>
+        <div className='brains-behind-container lg:h-[400px] p-8'>
             <div>
 
                 <Title boldText={"Brains Behind "} smallText={"The Scene"}></Title>
@@ -38,10 +39,10 @@ const BrainsBehind = () => {
                                 <div
                                     data-aos={i == 1 ? "zoom-in-up" : "zoom-in-down"}
                                     key={i}
-                                    style={{ backgroundImage: 'url(/images/bgshape.svg)', backgroundSize: '440px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', objectFit: "cover", }}
-                                    className='lg:w-44 flex justify-center'
+                                    style={{ backgroundImage: 'url(/images/bgshape.svg)', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', objectFit: "cover", }}
+                                    className='card lg:w-44 flex justify-center'
                                 >
-                                    <img src={datum?.image} className='h-40 w-40' alt="" />
+                                    <img src={datum?.image} className='pic h-40 w-40' alt="" />
                                 </div>
                                 <div className=' bg-transparent  text-center bottom-3'>
                                     <h1 className='text-xl font-bold'>{datum?.name}</h1>

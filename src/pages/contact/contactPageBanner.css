@@ -6,12 +6,24 @@
   font-size: 40px !important;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .contact-banner {
     background-position: 650px 100px;
     background-size: 530px auto;
   }
   .fontsize {
     font-size: 65px !important;
+  }
+}
+@media (min-width: 1441px) {
+  .contact-banner {
+    background-position: 900px center;
+    background-size: 730px auto;
+  }
+  .fontsize {
+    font-size: 90px !important;
+  }
+  .franklin-fontsize {
+    font-size: 25px;
   }
 }

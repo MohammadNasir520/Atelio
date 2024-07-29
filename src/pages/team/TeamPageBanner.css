@@ -14,7 +14,7 @@
 @media (min-width: 1201px) and (max-width: 1440px) {
   .Team-banner {
     background-position: 660px center;
-    background-size: 660px auto;
+    background-size: 580px auto;
   }
 }
 @media (min-width: 1441px) and (max-width: 1920px) {

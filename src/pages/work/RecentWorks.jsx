@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../../components/Style.Css/Style.css"
+import './RecentWorks.css'
 
 const RecentWorks = ({ data }) => {
     console.log(data)
@@ -14,9 +15,9 @@ const RecentWorks = ({ data }) => {
 
     const getClassNameForIndex = (index) => {
         if (index % 6 === 0 || index % 6 === 2 || index % 6 === 3) {
-            return "row-span-2 w-full sm:w-[300px] h-[350px] mx-auto my-2 cursor-pointer";
+            return "work-verticallyLarge-img row-span-2 w-full  mx-auto my-2 cursor-pointer";
         } else {
-            return "row-span-1 w-full sm:w-[300px] h-[150px] mx-auto my-2 cursor-pointer";
+            return "work-verticallySmall-img row-span-1 w-full w-[300px] mx-auto my-2 cursor-pointer";
         }
     };
 
