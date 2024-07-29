@@ -145,12 +145,12 @@ const Reviews = () => {
                                 className={`lg:py-24 py-24`}
                             >
                                 <div className='lg:space-y-0 relative'>
-                                    <div className='h-16 w-[220px] bg-white flex px-3 items-center rounded-full border-fuchsia-500 border absolute top-[-40px] left-[20px]'>
+                                    <div className='pic-designation-box h-16 w-[220px] bg-white flex px-3 items-center rounded-full border-fuchsia-500 border absolute top-[-40px] left-[20px]'>
                                         <div className='flex gap-3'>
                                             <div className='flex justify-center items-center'>
                                                 <img
                                                     src={datum?.image}
-                                                    className='h-12 w-12 rounded-full object-cover'
+                                                    className='pic h-12 w-12 rounded-full object-cover'
                                                     alt='img'
                                                 />
                                             </div>
@@ -160,7 +160,7 @@ const Reviews = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='h-[18rem] w-[16rem] bg-white  pt-8 px-5 text-justify  rounded-[40px] border-fuchsia-500 border'>
+                                    <div className='description-box h-[18rem] w-[16rem] bg-white  pt-8 px-5 text-justify  rounded-[40px] border-fuchsia-500 border'>
                                         {datum.description}
                                     </div>
                                 </div>
