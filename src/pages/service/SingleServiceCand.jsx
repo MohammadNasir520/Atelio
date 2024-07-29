@@ -1,4 +1,5 @@
 import React from 'react';
+import './SingleServiceCard.css'
 
 const SingleServiceCard = ({ datum, index }) => {
     const { title1, title2, description, services, image } = datum
@@ -14,7 +15,7 @@ const SingleServiceCard = ({ datum, index }) => {
             <div data-aos="flip-left" className='flex justify-center items-center lg:w-5/12 mb-3 lg:mb-0'>
                 <img
                     src={image}
-                    className='lg:h-72 lg:w-[420px]'
+                    className='serviceImg lg:h-72 lg:w-[420px] '
                     alt="" />
             </div>
             <div className='lg:w-7/12 space-y-5'>
