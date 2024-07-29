@@ -26,7 +26,10 @@
     background-position: 800px center;
     background-size: 1355px auto;
   }
-  .bricolage-grotesque-baseTextFont {
-    font-size: 85px;
+  .smallHeading-fontsize {
+    font-size: 80px !important;
+  }
+  .frnklin-fontsize {
+    font-size: 25px;
   }
 }
