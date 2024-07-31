@@ -91,6 +91,7 @@ const Reviews = () => {
         centerMode: true,
 
 
+
         responsive: [
             {
                 breakpoint: 1924,
@@ -116,6 +117,7 @@ const Reviews = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+
                 },
             },
         ],
@@ -136,13 +138,13 @@ const Reviews = () => {
                 <span className='fontFranklin text-gray-400 '>About Us</span>
             </h1>
 
-            <div data-aos="zoom-in-up" className='lg:h-[600px] flex justify-center items-center mx-auto'>
+            <div data-aos="zoom-in-up" className='lg:h-[580px] flex justify-center items-center mx-auto'>
                 <div className='lg:w-3/4 w-full'>
                     <Slider {...settings}>
                         {data.map((datum, index) => (
                             <div
                                 key={index}
-                                className={`lg:py-24 py-24`}
+                                className={` py-24 `}
                             >
                                 <div className='lg:space-y-0 relative'>
                                     <div className='pic-designation-box h-16 w-[220px] bg-white flex px-3 items-center rounded-full border-fuchsia-500 border absolute top-[-40px] left-[20px]'>

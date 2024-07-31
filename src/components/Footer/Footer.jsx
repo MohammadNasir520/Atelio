@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { FaCopyright } from "react-icons/fa";
 import "./Footer.css"
 
 const Footer = () => {
     return (
-        <div className='relative py-20 lg:min-h-[300px]  footeropacity '>
+        <div className='relative py-8 md:py-20 lg:min-h-[300px]  footeropacity '>
 
 
             <div
@@ -60,7 +61,12 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className='block text-white mt-2 font-bold text-2xl' />
+                <div className='flex justify-center items-center mt-6 lg:mt-8 gap-1'>
+                    <FaCopyright className='h-5 w-5 text-white' />
+                    <p className='text-white text-center '>All rights reserved by Atleio</p>
+                </div>
             </div>
+
         </div>
     );
 };

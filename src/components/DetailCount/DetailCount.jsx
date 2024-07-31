@@ -23,7 +23,7 @@ const DetailCount = () => {
         },
     ]
     return (
-        <div className='detail-container flex justify-center items-center p-10 lg:px-14'
+        <div className='detail-container flex justify-center items-center p-7 md:p-10 lg:px-14 '
 
             style={{ backgroundImage: 'url(/images/bgImg.png)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', objectFit: "cover", }}
         >
