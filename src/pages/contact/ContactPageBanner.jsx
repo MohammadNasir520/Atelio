@@ -19,7 +19,7 @@ const ContactBanner = () => {
         >
 
 
-            <div data-aos="fade-up" className='h-screen flex items-center justify-center ' >
+            <div data-aos="fade-up" className='h-[600px] md:h-screen flex items-center justify-center ' >
 
                 <div className=' lg:w-5/6   text-white '>
                     <h1 className='fontFranklin  font-thin franklin-fontsize'>Feel Free To Contact Us</h1>
