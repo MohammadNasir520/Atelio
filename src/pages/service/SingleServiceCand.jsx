@@ -4,7 +4,7 @@ import './SingleServiceCard.css'
 const SingleServiceCard = ({ datum, index }) => {
     const { title1, title2, description, services, image } = datum
     return (
-        <div className={`overflow-x-hidden lg:flex lg:h-[500px] ${index % 2 == 0 ? "bg-black text-white" : "bg-white text-black flex-row-reverse"}  items-center justify-center lg:px-16 py-6 px-3`}
+        <div className={`overflow-x-hidden lg:flex lg:h-[500px] ${index % 2 == 0 ? "bg-black text-white" : "bg-white text-black flex-row-reverse"}  items-center justify-center lg:px-16 p-5`}
             style={{
                 backgroundImage: `url("${datum?.bgImg}")`,
                 backgroundSize: "420px auto",

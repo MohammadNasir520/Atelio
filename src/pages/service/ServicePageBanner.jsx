@@ -23,9 +23,9 @@ const ServiceBanner = () => {
             <div className='h-screen  lg:flex justify-center text-center  items-center' >
 
                 <div data-aos="fade-up" className='  text-white h-full flex justify-center items-center flex-col'>
-                    <h1 className='bricolage-grotesque-baseTextFont   !font-thin !leading-normal'>We Craf<span className='font-bold' >t Solutions </span><br></br>
+                    <h1 className='bricolage-grotesque-baseTextFont   !font-thin !leading-normal'>We Craft<span className='font-bold' > Solutions </span><br></br>
 
-                        Tha<span className='font-bold'>t Create Long-lasting <br></br>
+                        That<span className='font-bold'> Create Long-lasting <br></br>
 
                             Growth </span> For Brands</h1>
 
