@@ -29,7 +29,7 @@ const TeamMemberCard = () => {
         },
     ]
     return (
-        <div className=' p-8 bg-black text-white'>
+        <div className=' px-8 bg-black text-white'>
             <div>
 
 
@@ -45,9 +45,9 @@ const TeamMemberCard = () => {
                                 >
                                     <img src={datum?.image} className='lg:h-80 lg:w-80 mb-16 ml-4 ' alt="" />
                                 </div>
-                                <div data-aos={i == 1 ? "zoom-in-down" : i == 2 ? "zoom-in-left" : "zoom-in-right"} className='lg:w-3/5 bottom-3'>
-                                    <h1 className='smallHeadingFont text-3xl   lg:text-4xl'>{datum?.name}</h1>
-                                    <h1 className='fontFranklin text-violet-500 text-xl mb-2'>{datum?.designation}</h1>
+                                <div data-aos={i == 1 ? "zoom-in-down" : i == 2 ? "zoom-in-left" : "zoom-in-right"} className='lg:w-3/5 bottom-3  text-justify'>
+                                    <h1 className='smallHeadingFont text-3xl   lg:text-4xl text-center md:text-left'>{datum?.name}</h1>
+                                    <h1 className='fontFranklin text-violet-500 text-xl mb-2 text-center md:text-left'>{datum?.designation}</h1>
                                     <p className='text-sm'>{datum?.description}</p>
                                 </div>
                             </div>

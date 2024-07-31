@@ -12,7 +12,7 @@ import teamBannerImage from "/images/teamBg3.png"
 const TeamBanner = () => {
     return (
         <div
-            className='Team-banner h-screen mt-[-65px] lg:py-5 bg-black px-2  lg:px-14 '
+            className='Team-banner h-[500px] md:h-screen mt-[-65px] lg:py-5 bg-black px-2  lg:px-14 '
             style={{
                 backgroundImage: `url(${teamBannerImage})`,
 
@@ -23,7 +23,7 @@ const TeamBanner = () => {
         >
 
 
-            <div className='h-screen flex items-center' >
+            <div className='h-[500px] md:h-screen flex items-center' >
 
                 <div data-aos="fade-up" className=' lg:w-4/6 lg:ml-28  text-white h-[300px]'>
                     <h1 className='bricolage-grotesque-baseTextFont font-thin '>WE ARE THE <span className='font-bold'> BRAINS <br></br>
