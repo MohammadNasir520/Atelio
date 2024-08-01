@@ -1,18 +1,43 @@
+.detail-container {
+  background-size: cover;
+}
+
 @media (max-width: 767px) {
   /* Styles for 19-inch monitors and smaller screens */
-
+  .detail-container {
+    background-size: 700px;
+  }
   .details-card {
-    height: 145px;
+    height: 150px;
     width: 150px;
+  }
+  .floating-box {
+    height: 30px;
   }
 }
 
+@media (min-width: 768px) and (max-width: 1079px) {
+  /* Styles for 19-inch monitors and smaller screens */
+  .detail-container {
+    background-size: 1200px;
+  }
+  .details-card {
+    height: 305px;
+    width: 305px;
+  }
+  .floating-box {
+    height: 40px;
+  }
+}
 @media (min-width: 1080px) and (max-width: 1440px) {
   /* Styles for 19-inch monitors and smaller screens */
 
   .details-card {
     height: 192px;
     width: 192px;
+  }
+  .floating-box {
+    height: 112px;
   }
 }
 
@@ -26,6 +51,9 @@
     height: 220px;
     width: 220px;
   }
+  .floating-box {
+    height: 120px;
+  }
 }
 
 /* Large Screens (24-inch monitors) */
@@ -37,6 +65,9 @@
   .details-card {
     height: 250px;
     width: 250px;
+  }
+  .floating-box {
+    height: 125px;
   }
 }
 

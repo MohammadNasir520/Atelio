@@ -23,16 +23,19 @@ const DetailCount = () => {
         },
     ]
     return (
-        <div className='detail-container flex justify-center items-center p-7 md:p-10 lg:px-14  lg:py-28'
+        <div className='detail-container relative flex justify-center items-center p-7 md:p-10 lg:px-14  lg:py-28 bg-black'
 
-            style={{ backgroundImage: 'url(/images/bgImg2.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', objectFit: "cover", }}
+            style={{
+                backgroundImage: 'url(/images/bgImg2.jpg)', backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center', objectFit: "cover",
+            }}
         >
 
 
-            <div className='w-full mx-auto grid grid-cols-2 gap-7 lg:flex justify-around' >
+            <div className='w-full mx-auto grid grid-cols-2 gap-7 lg:flex justify-center md:justify-around' >
                 {
                     information?.map((info, i) => {
-                        return <div data-aos={i == 1 ? "fade-left" : "fade-right"} key={i} className='details-card bg-white  space-y-14 lg:space-y-20 pt-2 mt-2 lg:mt-0 px-3 '>
+                        return <div data-aos={i == 1 ? "fade-left" : "fade-right"} key={i} className='details-card bg-white  space-y-14 lg:space-y-20 pt-2  px-3 '>
                             <h1 className='  text-base smallHeadingFont font-semibold'>{info.title}</h1>
                             <div className='flex gap-1'>
                                 <CountUp start={0} duration={10} end={info.number} decimal="," className='bricolage-grotesque-baseTextFont  font-bold '>
@@ -40,9 +43,13 @@ const DetailCount = () => {
                                 <p className='bricolage-grotesque-baseTextFont  font-bold '>{i == 0 && "+"}{i == 2 && "+"}</p>
                             </div>
                         </div>
+
                     })
                 }
 
+
+            </div>
+            <div className='floating-box absolute bottom-0 bg-black  w-full'>
 
             </div>
         </div>
