@@ -49,7 +49,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
 
                 <Title boldText={"Services"} smallText={" We Offer"}></Title>
             </div>
-            <div className='grid  md:grid-cols-2 lg:grid-cols-3 px-3  overflow-hidden  flex items-center justify-center'>
+            <div className='grid  md:grid-cols-2 lg:grid-cols-3   overflow-hidden  flex items-center justify-around gap-[8%] px-[6.5%]'>
                 {
                     Categories?.map((category, i) => {
                         return <div data-aos={i == 1 ? "fade-up" : "fade-down"} key={i} className='service-box my-4  w-full   overflow-hidden flex flex-col justify-center items-center'>
@@ -64,7 +64,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
 
                                 </img>
                                 <div onClick={() => setCategory(category?.category)} className=''>
-                                    <h1 data-aos="fade-up" className=' font-bold text-2xl'>{category?.title}</h1>
+                                    <h1 data-aos="fade-up" className=' font-bold text-2xl my-1'>{category?.title}</h1>
 
 
                                     <Button btnFunction={btnFunction} hashLink={hashLink} bgColor={i > 2 && "bg-green-600"}>view All</Button>

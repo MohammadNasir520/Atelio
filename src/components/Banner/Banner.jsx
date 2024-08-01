@@ -7,16 +7,16 @@ import "./Banner.css"
 const Banner = () => {
     return (
         <div
-            className='bgImg mt-[-70px] lg:py-5 bg-black'
+            className='bgImg mt-[-70px] lg:py-5 bg-black w-full overflow-x-hidden'
             style={{
-                backgroundImage: 'url(/images/bgImg4.png)',
+                backgroundImage: 'url(/images/bgImg5.png)',
                 backgroundRepeat: 'no-repeat',
-                objectFit: "cover",
+                // objectFit: "contain",
             }}
         >
 
 
-            <div className='h-screen flex items-center' >
+            <div className='h-[550px] md:h-screen flex items-center' >
 
                 <div data-aos="fade-up" className=' lg:w-4/6 lg:ml-32 px-4 text-white h-[300px]'>
                     <h1 className='bricolage-grotesque-baseTextFont  font-thin'>WE THINK</h1>

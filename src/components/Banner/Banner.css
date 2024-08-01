@@ -1,21 +1,41 @@
 .bgImg {
-  background-size: 950px auto;
-  background-position: center -250px;
+  background-size: contain;
+  background-position: right center;
+  object-fit: cover;
 }
-
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (max-width: 767px) {
   .bgImg {
-    background-size: 1350px auto;
-    background-position: center -250px;
+    background-size: 570px;
+  }
+}
+@media (min-width: 768px) and (max-width: 800px) {
+  .bgImg {
+    background-size: 1100px;
   }
   .bricolage-grotesque-baseTextFont {
     font-size: 65px;
   }
 }
+@media (min-width: 800px) and (max-width: 1020px) {
+  .bgImg {
+    background-size: 1300px;
+  }
+  .bricolage-grotesque-baseTextFont {
+    font-size: 65px;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1200px) {
+  .bgImg {
+    background-size: 1450px;
+  }
+  .bricolage-grotesque-baseTextFont {
+    font-size: 80px !important;
+  }
+}
+
 @media (min-width: 1201px) and (max-width: 1440px) {
   .bgImg {
-    background-size: 1050px auto;
-    background-position: 540px center;
+    background-size: contain auto;
   }
 }
 
@@ -24,8 +44,6 @@
   /* Styles for 21-inch monitors */
 
   .bgImg {
-    background-size: 1130px auto;
-    background-position: right -220px center;
   }
   .bricolage-grotesque-baseTextFont {
     font-size: 65px;
@@ -36,8 +54,7 @@
 @media (min-width: 1758px) and (max-width: 2006px) {
   /* Styles for 24-inch monitors */
   .bgImg {
-    background-size: 1750px auto;
-    background-position: right -340px center;
+    /* background-size: 1750px auto; */
   }
   .bricolage-grotesque-baseTextFont {
     font-size: 85px;
