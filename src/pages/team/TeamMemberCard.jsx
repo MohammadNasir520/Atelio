@@ -41,13 +41,14 @@ const TeamMemberCard = () => {
                                     data-aos={i == 1 ? "zoom-in-down" : i == 2 ? "zoom-in-left" : "zoom-in-right"}
                                     key={i}
                                     style={{ backgroundImage: 'url(/images/bgshape.svg)', backgroundSize: '650px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', }}
-                                    className='lg:w-2/5 flex justify-center'
+                                    className='lg:w-2/5 flex justify-center relative'
                                 >
                                     <img src={datum?.image} className='lg:h-80 lg:w-80 mb-16 ml-4 ' alt="" />
+                                    <div className='absolute bottom-10 left-0 right-0 h-12  rounded-lg bg-gradient-to-r from-black via-black to-black opacity-[3] blur' />
                                 </div>
-                                <div data-aos={i == 1 ? "zoom-in-down" : i == 2 ? "zoom-in-left" : "zoom-in-right"} className='lg:w-3/5 bottom-3  text-justify'>
-                                    <h1 className='smallHeadingFont text-3xl   lg:text-4xl text-center md:text-left'>{datum?.name}</h1>
-                                    <h1 className='fontFranklin text-violet-500 text-xl mb-2 text-center md:text-left'>{datum?.designation}</h1>
+                                <div data-aos={i == 1 ? "zoom-in-down" : i == 2 ? "zoom-in-left" : "zoom-in-right"} className=' lg:w-3/5 bottom-3 text-justify'>
+                                    <h1 className='smallHeadingFont text-3xl   lg:text-4xl text-center lg:text-left'>{datum?.name}</h1>
+                                    <h1 className='fontFranklin text-violet-500 text-xl mb-2 text-center lg:text-left'>{datum?.designation}</h1>
                                     <p className='text-sm'>{datum?.description}</p>
                                 </div>
                             </div>

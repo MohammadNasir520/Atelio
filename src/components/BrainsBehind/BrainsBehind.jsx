@@ -35,16 +35,18 @@ const BrainsBehind = () => {
                 <div className='lg:flex justify-around w-full items-center'>
                     {
                         data?.map((datum, i) => {
-                            return <div key={i} className='relative mt-5 lg:mt-0 '>
+                            return <div key={i} className='relative mt-5 lg:mt-0 h-[200px]'>
                                 <div
                                     data-aos={i == 1 ? "zoom-in-up" : "zoom-in-down"}
                                     key={i}
                                     style={{ backgroundImage: 'url(/images/bgshape.svg)', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', objectFit: "cover", }}
-                                    className='card lg:w-44 flex justify-center'
+                                    className='card lg:w-44 flex justify-center relative '
                                 >
                                     <img src={datum?.image} className='pic h-40 w-40' alt="" />
+                                    <div className='absolute bottom-[-15px]   h-10  w-40 rounded-lg bg-gradient-to-r from-slate-100 via-slate-100 to-slate-100 opacity-[3] blur' />
                                 </div>
-                                <div className=' bg-transparent  text-center bottom-3'>
+
+                                <div className='absolute bottom-0  text-center z-20 w-full'>
                                     <h1 className='text-xl font-bold'>{datum?.name}</h1>
                                     <h1 className='fontFranklin text-fuchsia-700 '>{datum?.designation}</h1>
                                 </div>
