@@ -268,14 +268,14 @@ const Brands = () => {
 
     ]
     return (
-        <div className=' brands-container mb-12 '>
+        <div className=' brands-container mb-12 overflow-x-hidden '>
             <div data-aos="fade-up" className='mb-12'>
                 <Title boldText={"Trusted by 100+ Brands"} smallText={"All Over the World"}></Title>
                 <Marquee pauseOnHover direction='left'>
 
                     {images?.map((image, i) => {
-                        return <div key={i} className='card-1 h-44 w-64 mx-6' >
-                            <img src={image.image} className='h-full w-full'></img>
+                        return <div key={i} className='card h-44 w-64 mx-6' >
+                            <img src={image.image} className='h-full w-full object-cover'></img>
                         </div>
                     })}
                 </Marquee>
@@ -284,8 +284,8 @@ const Brands = () => {
                 <Marquee pauseOnHover direction='right'>
 
                     {images?.map((image, i) => {
-                        return <div key={i} className='card-1 h-44 w-64 mx-6' >
-                            <img src={image.image} className='h-full w-full'></img>
+                        return <div key={i} className='card h-44 w-64 mx-6' >
+                            <img src={image.image} className='h-full w-full object-cover'></img>
                         </div>
                     })}
                 </Marquee>

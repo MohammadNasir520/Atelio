@@ -42,8 +42,8 @@ const Footer = () => {
             <div className='lg:absolute lg:bottom-14 right-0 left-0'>
 
 
-                <div className=' space-y-9 lg:flex items-end lg:w-11/12 text-white justify-between px-9 mx-auto   '>
-                    <div className='lg:w-1/2 flex items-center justify-center lg:justify-start  lg:ml-14'>
+                <div className=' space-y-9 lg:flex items-end lg:w-10/12 text-white justify-between px-9 mx-auto   '>
+                    <div className='lg:w-1/2 flex items-center justify-center lg:justify-start  lg:ml-2'>
                         <NavLink to={'/'}>
                             <img
                                 className='h-10 w-40 lg:h-7 lg:w-24 '
@@ -52,7 +52,7 @@ const Footer = () => {
                             />
                         </NavLink>
                     </div>
-                    <div className='flex items-end justify-around lg:w-1/2 gap-5 lg:gap-0  '>
+                    <div className='flex items-end justify-around lg:w-2/6 gap-5 lg:gap-0  '>
                         <Link className='smallHeadingFont' to={"/"}>Home</Link>
                         <Link className='smallHeadingFont' to={"/team"}>Team</Link>
                         <Link className='smallHeadingFont' to={"/service"}>Services</Link>
@@ -63,7 +63,7 @@ const Footer = () => {
                 <hr className='block text-white mt-2 font-bold text-2xl' />
                 <div className='flex justify-center items-center mt-6 lg:mt-8 gap-1'>
                     <FaCopyright className='h-5 w-5 text-white' />
-                    <p className='text-white text-center smallHeadingFont '>All rights reserved by Atleio</p>
+                    <p className='smallHeadingFont text-white text-center smallHeadingFont '>All rights reserved by Atelio</p>
                 </div>
             </div>
 

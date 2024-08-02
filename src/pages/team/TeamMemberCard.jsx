@@ -49,7 +49,7 @@ const TeamMemberCard = () => {
                                     <div className='absolute bottom-12 left-0 right-0 h-[70px] rounded-lg '
                                         style={
                                             {
-                                                background: 'linear-gradient(to top,  rgba(1, 1, 1, 1), rgba(0, 0, 0.0, 0.7))',
+                                                background: 'linear-gradient(to top,  rgba(2, 2, 3, 3), rgba(0, 0, 0.0, 0.4))',
                                                 filter: 'blur(5px)'
                                             }} />
 

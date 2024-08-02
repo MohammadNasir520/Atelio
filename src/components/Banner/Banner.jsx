@@ -7,7 +7,7 @@ import "./Banner.css"
 const Banner = () => {
     return (
         <div
-            className='bgImg mt-[-70px] lg:py-5 bg-black w-full overflow-x-hidden '
+            className='bgImg mt-[-70px] lg:py-5 bg-black w-full overflow-hidden'
             style={{
                 backgroundImage: 'url(/images/bgImg5.png)',
                 backgroundRepeat: 'no-repeat',

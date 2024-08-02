@@ -5,12 +5,12 @@ import Brands from '../../components/Brands/Brands';
 import SingleServiceCand from './SingleServiceCand';
 import ContactForm from '../../components/Contact/ContactForm';
 
-import logosMarks from '/images/Thumbnails/Logo.jpg'
-import packaging from '/images/Thumbnails/packaging.jpg'
-import visualIdentity from '/images/Thumbnails/visual identity.jpg'
-import socialMedia from '/images/Thumbnails/social medias.jpg'
-import banners from '/images/Thumbnails/banners.jpg'
-import bespoke from '/images/Thumbnails/bespoke.jpg'
+import logosMarks from '/images/Thumbnails/Logo.png'
+import packaging from '/images/Thumbnails/packaging.png'
+import visualIdentity from '/images/Thumbnails/visual-identity.png'
+import socialMedia from '/images/Thumbnails/social-medias.png'
+import banners from '/images/Thumbnails/banners.png'
+import bespoke from '/images/Thumbnails/bespoke.png'
 
 const ServicePage = () => {
 

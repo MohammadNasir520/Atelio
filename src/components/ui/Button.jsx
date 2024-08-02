@@ -10,7 +10,7 @@ const Button = ({ children, type, bgColor, btnFunction, hashLink }) => {
                     <button
                         onClick={() => { btnFunction ? btnFunction() : "" }}
                         type={type}
-                        className={` ${bgColor ? "bg-[#0feb87]" : "bg-violet-700"} px-4  rounded-2xl mt-2 py-1 text-white`}>
+                        className={` ${bgColor ? "bg-[#0feb87] text-black" : "bg-violet-700 text-white"} px-4  rounded-2xl mt-2 py-1 `}>
                         <h1 className='fontFranklin '>
 
                             {children}
@@ -22,7 +22,7 @@ const Button = ({ children, type, bgColor, btnFunction, hashLink }) => {
                     <button
                         onClick={() => { btnFunction ? btnFunction() : "" }}
                         type={type}
-                        className={`fontFranklin  ${bgColor ? "bg-[#0feb87]" : "bg-violet-700"} px-4  rounded-2xl mt-2 py-1 text-white`}>
+                        className={`fontFranklin  ${bgColor ? "bg-[#0feb87] text-black" : "bg-violet-700 text-white"} px-4  rounded-2xl mt-2 py-1 `}>
 
                         {children}
                     </button>
