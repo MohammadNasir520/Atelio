@@ -33,7 +33,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
             image: socialMedia
         },
         {
-            title: "Banners Or Covers",
+            title: "Banners & Covers",
             category: "bannersOrCovers",
             image: banners
         },
