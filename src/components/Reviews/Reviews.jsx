@@ -89,6 +89,7 @@ const Reviews = () => {
         autoplaySpeed: 3000,
         arrows: false,
         centerMode: true,
+        dots: true,
 
 
 
