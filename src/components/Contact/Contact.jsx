@@ -10,7 +10,7 @@ const Contact = () => {
             className=' bg-black py-9 '
         >
 
-            <h1 data-aos="fade-down" className='text-center text-white mb-14'><span className='text-xl font-bold Let’s Start with'>Let’s Start with </span><span className='fontFranklin text-gray-400 '>a Creative Discuuion</span></h1>
+            <h1 data-aos="fade-down" className='text-center text-white mb-14'><span className='text-xl font-bold Let’s Start with'>Let’s Start with </span><span className='fontFranklin text-gray-400 '>a Creative Discussion</span></h1>
             <ContactForm></ContactForm>
 
         </div >

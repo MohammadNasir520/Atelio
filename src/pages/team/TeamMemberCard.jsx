@@ -24,7 +24,7 @@ const TeamMemberCard = () => {
         {
             image: souravHalder,
             name: "SAURAV HALDER",
-            designation: "Visual Storyteer",
+            designation: "Visual Storyteller",
             description: "Hey there, I’m Saurav. I bring your brand to life through engaging digital content. Whether it's creating eye-catching social media posts or designing website banners, I make sure your online presence is impactful and memorable."
         },
     ]
@@ -48,7 +48,7 @@ const TeamMemberCard = () => {
                                     <div className='absolute bottom-12 left-0 right-0 h-[70px] rounded-lg bg-gradient-to-r from-black via-black to-black opacity-90'
                                         style={
                                             {
-                                                background: 'linear-gradient(to top, rgba(1.6, 1.6, 1.6, 2), rgba(0, 0, 0, 0.78))',
+                                                background: 'linear-gradient(to top, rgba(2, 2, 2, 2), rgba(0, 0, 0.8, 0.8))',
                                                 filter: 'blur(10px)'
                                             }} />
 

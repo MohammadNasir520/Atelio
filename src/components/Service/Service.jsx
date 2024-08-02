@@ -67,7 +67,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
                                     <h1 data-aos="fade-up" className='smallHeadingFont font-bold text-2xl my-1'>{category?.title}</h1>
 
 
-                                    <Button btnFunction={btnFunction} hashLink={hashLink} bgColor={i > 2 && "bg-green-600"}>view All</Button>
+                                    <Button btnFunction={btnFunction} hashLink={hashLink} bgColor={i > 2 && "bg-black"}>view All</Button>
                                 </div>
                             </div>
                         </div>

@@ -24,7 +24,7 @@ const BrainsBehind = () => {
         {
             image: souravHalder,
             name: "SAURAV HALDER",
-            designation: "Visual Storyteer"
+            designation: "Visual Storyteller"
         },
     ]
     return (
