@@ -49,7 +49,7 @@ const Service = ({ btnFunction, hashLink, setCategory }) => {
 
                 <Title boldText={"Services"} smallText={" We Offer"}></Title>
             </div>
-            <div className='grid  md:grid-cols-2 lg:grid-cols-3   overflow-hidden  flex items-center justify-around gap-[8%] px-[6.5%] py-14 lg:py-0'>
+            <div className='grid  md:grid-cols-2 lg:grid-cols-3   overflow-hidden  flex items-center justify-around gap-[8%] px-[6.5%] py-16 lg:py-0'>
                 {
                     Categories?.map((category, i) => {
                         return <div data-aos={i == 1 ? "fade-up" : "fade-down"} key={i} className='service-box my-4  w-full   overflow-hidden flex flex-col justify-center items-center'>
