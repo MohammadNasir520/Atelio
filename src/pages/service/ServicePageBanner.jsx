@@ -9,7 +9,7 @@ import "./ServicePageBanner.css"
 const ServiceBanner = () => {
     return (
         <div
-            className='service-banner h-screen mt-[-65px] lg:py-5 bg-black  '
+            className='service-banner h-[600px] md:h-screen mt-[-65px] lg:py-5 bg-black  '
             style={{
                 backgroundImage: 'url(/images/serviceBgImg2.png),url(/images/serviceBgImg.png)',
                 backgroundPosition: '-90px center, right -90px center',
@@ -20,7 +20,7 @@ const ServiceBanner = () => {
         >
 
 
-            <div className='h-screen  lg:flex justify-center text-center  items-center' >
+            <div className='h-[600px] md:h-screen lg:flex justify-center text-center  items-center' >
 
                 <div data-aos="fade-up" className='  text-white h-full flex justify-center items-center flex-col'>
                     <h1 className='bricolage-grotesque-baseTextFont   !font-thin !leading-normal'>We Craft<span className='font-bold' > Solutions </span><br></br>

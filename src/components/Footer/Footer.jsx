@@ -12,7 +12,7 @@ const Footer = () => {
             <div
                 className='footerBg'
                 style={{
-                    backgroundImage: 'url(/images/AtelioLogo.png)',
+                    // backgroundImage: 'url(/images/AtelioLogo.png)',
                     // backgroundSize: '440px auto',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
@@ -53,17 +53,17 @@ const Footer = () => {
                         </NavLink>
                     </div>
                     <div className='flex items-end justify-around lg:w-1/2 gap-5 lg:gap-0  '>
-                        <Link to={"/"}>Home</Link>
-                        <Link to={"/team"}>Team</Link>
-                        <Link to={"/service"}>Services</Link>
-                        <Link to={"/work"}>Work</Link>
-                        <Link to={"/contact"}>Contact</Link>
+                        <Link className='smallHeadingFont' to={"/"}>Home</Link>
+                        <Link className='smallHeadingFont' to={"/team"}>Team</Link>
+                        <Link className='smallHeadingFont' to={"/service"}>Services</Link>
+                        <Link className='smallHeadingFont' to={"/work"}>Work</Link>
+                        <Link className='smallHeadingFont' to={"/contact"}>Contact</Link>
                     </div>
                 </div>
                 <hr className='block text-white mt-2 font-bold text-2xl' />
                 <div className='flex justify-center items-center mt-6 lg:mt-8 gap-1'>
                     <FaCopyright className='h-5 w-5 text-white' />
-                    <p className='text-white text-center '>All rights reserved by Atleio</p>
+                    <p className='text-white text-center smallHeadingFont '>All rights reserved by Atleio</p>
                 </div>
             </div>
 

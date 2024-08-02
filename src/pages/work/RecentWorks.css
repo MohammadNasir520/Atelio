@@ -1,4 +1,25 @@
-@media (max-width: 1440px) {
+@media (max-width: 767px) {
+  .work-verticallyLarge-img {
+    width: 300px;
+    height: 350px;
+  }
+  .work-verticallySmall-img {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1199px) {
+  .work-verticallyLarge-img {
+    width: 300px;
+    height: 350px;
+  }
+  .work-verticallySmall-img {
+    width: 300px;
+    height: 350px;
+    grid-row: span 2 / span 2;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
   .work-verticallyLarge-img {
     width: 300px;
     height: 350px;

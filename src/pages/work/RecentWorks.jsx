@@ -39,7 +39,7 @@ const RecentWorks = ({ data }) => {
             </div>
 
             {groups.map((group, groupIndex) => (
-                <div key={groupIndex} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 grid-rows-2 lg:px-28 my-16">
+                <div key={groupIndex} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-rows-2 lg:px-28 my-16">
                     {group.map((product, i) => (
                         <React.Fragment key={i}>
                             <div
@@ -56,8 +56,10 @@ const RecentWorks = ({ data }) => {
                             </div>
                         </React.Fragment>
                     ))}
+
+                    {/* selected image */}
                     {selectedProduct && Math.floor(selectedIndex / 6) === groupIndex && (
-                        <div data-aos="fade-left" className="col-span-1 sm:col-span-2 lg:col-span-3 lg:w-3/4   mx-auto my-5 h-[700px] border overflow-x-hidden">
+                        <div data-aos="fade-left" className="image-large-box col-span-1 sm:col-span-2 lg:col-span-3 w-full min-h-[500px] px-1 md:px-2 lg:w-3/4    md:min-h-[700px] mx-auto my-5 border overflow-x-hidden">
                             <img
                                 src={selectedProduct.image}
                                 className="h-3/4 w-full  mx-auto"

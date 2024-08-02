@@ -44,7 +44,14 @@ const TeamMemberCard = () => {
                                     className='lg:w-2/5 flex justify-center relative'
                                 >
                                     <img src={datum?.image} className='lg:h-80 lg:w-80 mb-16 ml-4 ' alt="" />
-                                    <div className='absolute bottom-10 left-0 right-0 h-12  rounded-lg bg-gradient-to-r from-black via-black to-black opacity-[3] blur' />
+                                    {/* <div className='absolute bottom-10 left-0 right-0 h-[70px]  rounded-lg bg-gradient-to-r from-black via-black to-black opacity-90 blur' /> */}
+                                    <div className='absolute bottom-12 left-0 right-0 h-[70px] rounded-lg bg-gradient-to-r from-black via-black to-black opacity-90'
+                                        style={
+                                            {
+                                                background: 'linear-gradient(to top, rgba(1.6, 1.6, 1.6, 2), rgba(0, 0, 0, 0.78))',
+                                                filter: 'blur(10px)'
+                                            }} />
+
                                 </div>
                                 <div data-aos={i == 1 ? "zoom-in-down" : i == 2 ? "zoom-in-left" : "zoom-in-right"} className=' lg:w-3/5 bottom-3 text-justify'>
                                     <h1 className='smallHeadingFont text-3xl   lg:text-4xl text-center lg:text-left'>{datum?.name}</h1>

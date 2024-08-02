@@ -48,7 +48,7 @@ const BrainsBehind = () => {
 
                                 <div className='absolute bottom-0  text-center z-20 w-full'>
                                     <h1 className='text-xl font-bold'>{datum?.name}</h1>
-                                    <h1 className='fontFranklin text-fuchsia-700 '>{datum?.designation}</h1>
+                                    <h1 className='fontFranklin text-violet-500 '>{datum?.designation}</h1>
                                 </div>
                             </div>
                         })
